@@ -1,0 +1,22 @@
+<!-- Navigation -->
+<div class="menu-background"></div>
+<div class="menu-container" id="menu-bars" (click)="Toggle()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<div class="nav-background">
+  <h1 class="brand-title">Smart Auto Group</h1>
+</div>
+<div class="nav-wrapper">
+  <nav class="nav" id="nav">
+    <ul class="nav-items" (click)="Toggle()">
+      <li class="no-margin-left-list"><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">How it Works</a></li>
+      <li><a routerLink="/beer" routerLinkActive="active">Budget Estimator</a></li>
+      <li><a routerLink="/on-tap" routerLinkActive="active">Inventory</a></li>
+      <li><a routerLink="/events" routerLinkActive="active">FAQs</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Reviews</a></li>
+    </ul>
+  </nav>
+</div>

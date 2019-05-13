@@ -1,0 +1,217 @@
+@font-face { font-family: Montserrat; src: url(../../../assets/fonts/Montserrat.ttf) }
+.home-wrapper {
+  background-color: rgb(30, 144, 255);
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section {
+  min-height: 100vh; 
+  height: auto; 
+  position: relative; 
+}
+
+/* Home section ----------------------------------------------------------------------- */
+
+/* Video Background */
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto; 
+  height: auto;
+}
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Scroll Icon */
+.scroll-container {
+  display: flex;
+  justify-content: center; 
+}
+.scroll-down {
+  position: absolute;
+  top: 93vh;
+  margin: 0 auto;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  animation: flickerAnimation 2s infinite;
+}
+@keyframes flickerAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Title */
+.title-group {
+  font-family: Montserrat, sans-serif;
+  color: white; 
+  z-index: 2;
+  position: absolute;
+  top: 260px;
+  left: 80px;
+}
+.home-title { font-size: 3.8rem; }
+.home-subtitle { font-size: 1.5rem; }
+.home-subtitle-2 { font-size: 1.5rem; margin-top: 10px; }
+.button { 
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 10px auto;
+  margin-right: 15px; 
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px rgb(105, 105, 105);
+}
+.button:hover {
+  color: black;
+  background-color: white;
+}
+.button:active {
+  box-shadow: 0 2px #666;
+  background-color: white;
+  transform: translateY(2px);
+}
+
+/* Review Section ------------------------------------------------------------------ */
+#reviews {
+  background-color: white;
+  min-height: unset;
+  padding-top: 2px;
+  padding-bottom: 50px; 
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+/* Carousel */
+.container { max-width: unset !important; }
+.card { border: none; }
+.carousel-container { width: 80vw !important; }
+.carousel-control-next { right: -10%; }
+.carousel-control-prev { left: -10%; }
+.arrow-icon { color: black; font-size: 2rem; }
+
+/* Car Carousel */
+.car-name { text-align: center; }
+.margin-auto { left: -30.5%; position: relative; }
+.car-container .button:hover { background-color: rgb(175, 175, 175); color: white; }
+
+
+/* Review Carousel */
+#review-carousel { margin-top: 50px; }
+.review-container img { 
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+.review-name { 
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.8rem;
+}
+.review-stars { margin: auto; }
+.star { color: #F8D64E; }
+.review-subtitle { text-align: center; }
+.review-text { text-align: center; margin-top: 10px; }
+
+/* Car Section --------------------------------------------------- */
+#cars { 
+  background-color: #F5F5F5; 
+  min-height: unset; 
+  padding-top: 50px;
+  padding-bottom: 50px; 
+}
+.car-container { background-color: #F5F5F5;}
+/* Makes Carousel */
+/* @-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 80vh;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+} */
