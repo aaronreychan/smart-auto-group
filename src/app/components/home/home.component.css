@@ -102,6 +102,41 @@ video {
   transform: translateY(2px);
 }
 
+/* About Section ------------------------------------------------------------------- */
+#about {
+  background-color: #F5F5F5; 
+  min-height: unset; 
+  padding-top: 50px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-group {
+  width: 30vw;
+  margin-left: 20vw;
+}
+
+.section-subtitle {
+  padding-top: 100px;
+  font-size: 1.45rem;
+  text-align: justify;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.about-img img {
+  height: 700px;
+  width: auto;
+  position: relative;
+  left: 100px; 
+}
+
 /* Review Section ------------------------------------------------------------------ */
 #reviews {
   background-color: white;
@@ -156,62 +191,118 @@ video {
   padding-bottom: 50px; 
 }
 .car-container { background-color: #F5F5F5;}
-/* Makes Carousel */
-/* @-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
+
+.quote-title { text-align: center; padding-top: 50px; }
+
+/* Process Section ---------------------------------------------- */
+#process { 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: unset;
+  height: auto;
+  background-image: url("../../../assets/img/car-interior.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
+.process-title {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bold;
 }
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+
+.process-subtitle {
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.process-container {
+  padding-top: 50px;
+  width: 50vw;
   margin: auto;
-  overflow: hidden;
+  margin-left: 28vw;
+}
+
+.process-icon {
+  font-size: 10rem;
+}
+
+.process-caption-1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: -5px;
+}
+.process-caption-2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: -60px;
+}
+.process-caption-3 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+.process-caption-small-1 {
+  margin-left: 12px;
+  margin-top: -10px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.process-caption-small-2 {
+  margin-left: 17px;
+  margin-top: -10px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.process-caption-small-3 {
+  margin-left: 32px;
+  margin-top: -10px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.process-button {
+  margin-left: 26.5%;
+  margin-top: 50px;
+}
+
+/* Map Section ----------------------------------------------- */
+#map {
+  min-height: unset;
+  height: 510px;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.iframe-container {
   position: relative;
-  width: 80vh;
-}
-.slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: white;
   display: flex;
-  width: calc(250px * 14);
+  align-items: center;
+  justify-content: center;
 }
-.slider .slide {
-  height: 100px;
-  width: 250px;
-} */
+
+.google-logo {
+  height: 300px;
+  width: 300px;
+  border: none;
+}
+
+/* Footer Section -------------------------------------------- */
+#footer {
+  min-height: unset;
+  height: 200px;
+  background-color: #4CAF50;
+}
+
+/* Laptop */
+@media screen and (max-width: 1800px) {
+  .process-container { margin-left: 27vw; }
+}
