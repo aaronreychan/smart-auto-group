@@ -301,8 +301,110 @@ video {
   height: 200px;
   background-color: #4CAF50;
 }
-
-/* Laptop */
-@media screen and (max-width: 1800px) {
-  .process-container { margin-left: 27vw; }
+.footer-container {
+  position: relative;
+  top: 50px;
+  left: 70px;
+  width: 75%; 
 }
+.footer-title {
+  margin-bottom: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer-line {
+  margin-top: 5px;
+  margin-bottom: 5px; 
+  border-top: 2px dashed #131313;
+  float: left;
+}
+.line-1 { width: 60%; }
+.line-2 { width: 55%; }
+.line-3 { width: 47.5%; }
+.footer-text {
+  margin-top: 15px; 
+  font-weight: bold;
+  color: white;
+}
+.footer-icons {
+  margin-top: 15px;
+}
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 25px; 
+  color: white;
+}
+.footer-icon:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Laptop -----------------*********------------------------- */
+@media screen and (max-width: 1800px) {
+  /* About */
+  .section-subtitle { padding-top: 15px; }
+  /* Car */
+  .button { padding: 16px 20px 12px; }
+  /* Process */
+  .process-container { margin-left: 27vw; }
+  /* Footer */
+  .line-1 { width: 60%; }
+  .line-2 { width: 55%; }
+  .line-3 { width: 47.5%; }
+}
+
+@media screen and (max-width: 1367px) {
+    /* About */
+    .about-group { width: 32vw; margin-left: 16vw; }
+    .section-subtitle { padding-top: 15px; }
+    /* Car */
+    .car-button { padding: 16px 20px 12px; }
+    /* Process */
+    .process-container { margin-left: 26vw; }
+    .process-button { margin-left: 25.5%; }
+    /* Footer */
+    .footer-container { left: 40px; }
+    .line-1 { width: 60%; }
+    .line-2 { width: 80%; }
+    .line-3 { width: 68%; }
+}
+
+/* Large Smartphone */
+@media screen and (max-width: 600px) {
+  .title-group { top: 100px; left: 25px; }
+  .home-title { font-size: 2rem; font-weight: bold; }
+  .home-subtitle { font-size: 1.3rem; }
+  .home-subtitle-2 { font-size: 1.3rem; }
+  video { object-fit: cover; }
+  #video-background { position: absolute; width: 100%; height: 100vh; }
+  .about-container { flex-direction: column; }
+  .about-group { width: auto; margin: 25px; }
+  .section-subtitle { font-size: 1.2rem; }
+  .about-text { font-size: 1rem; }
+  .about-img img { height: 340px; }
+  .button { padding: 16px 16px 12px; font-size: 1rem; }
+  .margin-auto { left: unset; }
+  .quote-title { margin: 15px; font-size: 1.4rem; }
+  .process-container { margin-left: 32vw; }
+  .process-title { font-size: 2.6rem; }
+  .process-subtitle { font-size: 1.2rem; margin: 15px; }
+  .process-caption-2 { margin-left: -61px; }
+  .process-caption-3 { margin-left: -40px; }
+  .process-caption-small-3 { margin-left: 15px; }
+  .process-button { margin-left: -23.5%; }
+  .fa-key { margin-left: -19px; }
+  #footer { height: 450px; }
+  .footer-container { left: 15px; }
+  .footer-icon { margin-right: 37px; }
+}
+
+/* iPhone X */
+@media screen and (max-width: 376px) {
+  .title-group { left: 15px; margin-right: 10px; }
+  .home-title { font-size: 1.8rem; }
+  #footer { height: 470px; }
+  .button { padding: 10px 14px 8px; font-size: .9rem; }
+  .process-caption-2 { margin-left: -79px; position: relative; left: 23px; }
+  .footer-container { left: 5px; width: 80%; }
+  .footer-icon { margin-right: 35px; }
+} 
