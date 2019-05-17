@@ -40,11 +40,12 @@ a {
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
+  margin-top: -10px;
 }
 .nav-items li {
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
-  margin-left: 10px;
+
   cursor: pointer;
   z-index: 10;
 }
@@ -54,6 +55,7 @@ a {
   background-color: #4CAF50;
   border: 2px solid #4CAF50;
   border-radius: 5px;
+  margin-left: 10px;
 }
 .nav-menu a:hover {
   color: black;
@@ -79,34 +81,39 @@ a {
   .brand-title { font-size: 1.5rem; }
 }
 
-/* Laptop (1366 x 768) ---------***********------------------ */
-@media screen and (width: 1366px) {
-  .brand-title { font-size: 1.2rem; }
+/* Smaller Laptops ---------***********------------------ */
+@media screen and (max-width: 1487px) {
+  .brand-title { font-size: 1.2rem; font-weight: bold; margin-top: 5px; }
+  .nav-menu a { padding: 4px 7px; font-size: 14px; }
+  .nav-background { height: 50px; }
+  .nav-items { margin-top: -19px; }
 }
 
 /* Mobile Nav */
 /* iPad - Horizontal */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
   /* Navigation */
   #menu-bars { display: initial; }
   .desktop-none { display: initial; }
+  .nav-background { z-index: 21; }
+  .brand-title { margin-left: 15px; }
   .nav-menu { 
     top: -300px; 
     left: -20px; 
-    width: 105%; 
+    width: 109%; 
     transition: 0.75s ease; 
     position: fixed;
     z-index: 20;
   }
   .nav-expand { 
-    top: 80px !important; 
+    top: 50px !important; 
     display: initial; 
     transition: 0.3s ease; 
   }
   .nav-items { 
     flex-direction: column; 
     margin-left: -30px; 
-    margin-top: 0px; 
+    margin-top: -15px; 
     text-align: center;
   }
   .nav-items li {
@@ -117,12 +124,12 @@ a {
   .nav-menu a {
     padding: 0;
     background-color: rgba(0,0,0,0);
-    border: 2px solid rgba(0,0,0,0);
+    border: none;
   }
   .nav-menu a:active, .nav-menu a:hover {
     padding: 0;
     color: black;
-    border: 2px solid rgba(0,0,0,0);
+    border: none;
   }
   .no-margin-left-list { margin-left: 10px !important; padding-top: 15px !important; }
 
@@ -131,9 +138,9 @@ a {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 18px;
-    right: 22px;
-    z-index: 12;
+    top: 6px;
+    right: 15px;
+    z-index: 22;
   }
   .bar1, .bar2, .bar3 {
     width: 35px;
@@ -142,7 +149,7 @@ a {
     margin: 6px 0;
     transition: 0.4s;
     z-index: 30;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    /* box-shadow: 2px 2px 2px rgba(0,0,0,.5); */
   }
   .change .bar1 {
     background-color: rgb(0,0,0);

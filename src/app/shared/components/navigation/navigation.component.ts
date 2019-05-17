@@ -13,13 +13,11 @@ export class NavigationComponent implements OnInit {
   }
 
   Toggle() {
-    if (window.innerWidth < 1025) {
+    if (window.innerWidth < 1200) {
       var x = document.getElementById("nav");
       var y = document.getElementById("menu-bars");
-      var z = document.getElementById("nav-top")
       x.classList.toggle("nav-expand");
       y.classList.toggle("change");
-      z.classList.toggle("display-none");
     }
   }
 
