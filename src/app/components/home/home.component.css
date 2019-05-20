@@ -320,11 +320,12 @@ video {
 }
 .line-1 { width: 60%; }
 .line-2 { width: 55%; }
-.line-3 { width: 47.5%; }
+.line-3 { width: 200px; }
 .footer-text {
   margin-top: 15px; 
   font-weight: bold;
   color: white;
+  width: 70%;
 }
 .footer-icons {
   margin-top: 15px;
@@ -348,9 +349,9 @@ video {
   /* Process */
   .process-container { margin-left: 27vw; }
   /* Footer */
-  .line-1 { width: 60%; }
-  .line-2 { width: 55%; }
-  .line-3 { width: 47.5%; }
+  .line-1 { width: 72%; }
+  .line-2 { width: 87%; }
+  .footer-text { width: 90%; }
 }
 
 @media screen and (max-width: 1367px) {
@@ -363,10 +364,10 @@ video {
     .process-container { margin-left: 26vw; }
     .process-button { margin-left: 25.5%; }
     /* Footer */
-    .footer-container { left: 40px; }
-    .line-1 { width: 60%; }
-    .line-2 { width: 80%; }
-    .line-3 { width: 68%; }
+    .footer-container { left: 20px; }
+    .line-1 { width: 87%; }
+    .line-2 { width: 95%; }
+    .footer-text { width: 100%; }
 }
 
 /* Large Smartphone */
@@ -394,8 +395,9 @@ video {
   .process-button { margin-left: -23.5%; }
   .fa-key { margin-left: -19px; }
   #footer { height: 450px; }
-  .footer-container { left: 15px; }
+  .footer-container { left: 0; }
   .footer-icon { margin-right: 37px; }
+  .footer-text { width: 100%; }
 }
 
 /* iPhone X */
