@@ -75,7 +75,7 @@ video {
 .home-subtitle { font-size: 1.5rem; }
 .home-subtitle-2 { font-size: 1.5rem; margin-top: 10px; }
 .button { 
-  background-color: #4CAF50;
+  background-color: rgb(22, 64, 214);
   border: none;
   color: white;
   padding: 16px 32px 12px;
@@ -299,7 +299,7 @@ video {
 #footer {
   min-height: unset;
   height: 200px;
-  background-color: #4CAF50;
+  background-color: rgb(22, 64, 214);
 }
 .footer-container {
   position: relative;
@@ -308,6 +308,7 @@ video {
   width: 75%; 
 }
 .footer-title {
+  color: white;
   margin-bottom: 0;
   font-weight: bold;
   text-transform: uppercase;
@@ -315,7 +316,7 @@ video {
 .footer-line {
   margin-top: 5px;
   margin-bottom: 5px; 
-  border-top: 2px dashed #131313;
+  border-top: 2px dashed white;
   float: left;
 }
 .line-1 { width: 60%; }
