@@ -14,6 +14,8 @@ section {
   height: auto; 
   position: relative; 
 }
+a { color: unset; }
+
 
 /* Home section ----------------------------------------------------------------------- */
 
@@ -75,7 +77,7 @@ video {
 .home-subtitle { font-size: 1.5rem; }
 .home-subtitle-2 { font-size: 1.5rem; margin-top: 10px; }
 .button { 
-  background-color: rgb(22, 64, 214);
+  background-color: rgb(27, 76, 255);
   border: none;
   color: white;
   padding: 16px 32px 12px;
@@ -159,6 +161,7 @@ video {
 .carousel-control-next { right: -10%; }
 .carousel-control-prev { left: -10%; }
 .arrow-icon { color: black; font-size: 2rem; }
+.mobile-carousel-container { width: 85%; }
 
 /* Car Carousel */
 .car-name { text-align: center; }
@@ -182,6 +185,18 @@ video {
 .star { color: #F8D64E; }
 .review-subtitle { text-align: center; }
 .review-text { text-align: center; margin-top: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Car Section --------------------------------------------------- */
 #cars { 
@@ -299,7 +314,7 @@ video {
 #footer {
   min-height: unset;
   height: 200px;
-  background-color: rgb(22, 64, 214);
+  background-color: rgb(44, 86, 236);
 }
 .footer-container {
   position: relative;
@@ -341,6 +356,12 @@ video {
   cursor: pointer;
 }
 
+.show-desktop { display: inherit; }
+.show-mobile { display: none; }
+.action-button-container { display: none; }
+
+/* Media Queries -----------+++++++++------------------------------------------------- */
+
 /* Laptop -----------------*********------------------------- */
 @media screen and (max-width: 1800px) {
   /* About */
@@ -356,23 +377,26 @@ video {
 }
 
 @media screen and (max-width: 1367px) {
-    /* About */
-    .about-group { width: 32vw; margin-left: 16vw; }
-    .section-subtitle { padding-top: 15px; }
-    /* Car */
-    .car-button { padding: 16px 20px 12px; }
-    /* Process */
-    .process-container { margin-left: 26vw; }
-    .process-button { margin-left: 25.5%; }
-    /* Footer */
-    .footer-container { left: 20px; }
-    .line-1 { width: 87%; }
-    .line-2 { width: 95%; }
-    .footer-text { width: 100%; }
+  /* About */
+  .about-group { width: 32vw; margin-left: 16vw; }
+  .section-subtitle { padding-top: 15px; }
+  /* Car */
+  .car-button { padding: 16px 20px 12px; }
+  /* Process */
+  .process-container { margin-left: 26vw; }
+  .process-button { margin-left: 25.5%; }
+  /* Footer */
+  .footer-container { left: 20px; }
+  .line-1 { width: 87%; }
+  .line-2 { width: 95%; }
+  .footer-text { width: 100%; }
 }
 
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
+  .show-desktop { display: none; }
+  .show-mobile { display: inherit; }
+  .scroll-down { top: 88vh; }
   .title-group { top: 100px; left: 25px; }
   .home-title { font-size: 2rem; font-weight: bold; }
   .home-subtitle { font-size: 1.3rem; }
@@ -387,6 +411,7 @@ video {
   .button { padding: 16px 16px 12px; font-size: 1rem; }
   .margin-auto { left: unset; }
   .quote-title { margin: 15px; font-size: 1.4rem; }
+  #mobile-review-carousel { margin-top: 50px; }
   .process-container { margin-left: 32vw; }
   .process-title { font-size: 2.6rem; }
   .process-subtitle { font-size: 1.2rem; margin: 15px; }
@@ -399,14 +424,26 @@ video {
   .footer-container { left: 0; }
   .footer-icon { margin-right: 37px; }
   .footer-text { width: 100%; }
+  .action-button-container { 
+    height: 50px; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    background-color: white; 
+    z-index: 30; 
+    display: inherit;
+  }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 10px; }
 }
 
 /* iPhone X */
 @media screen and (max-width: 376px) {
   .title-group { left: 15px; margin-right: 10px; }
-  .home-title { font-size: 1.8rem; }
+  .home-title { font-size: 1.6rem; }
   #footer { height: 470px; }
   .button { padding: 10px 14px 8px; font-size: .9rem; }
+  .button-group .button { font-size: .85rem; }
   .process-caption-2 { margin-left: -79px; position: relative; left: 23px; }
   .footer-container { left: 5px; width: 80%; }
   .footer-icon { margin-right: 35px; }

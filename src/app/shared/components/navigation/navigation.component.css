@@ -64,15 +64,15 @@ a {
 .nav-menu a {
   color: white;
   padding: 8px 14px;
-  background-color: rgb(22, 64, 214);
-  border: 2px solid rgb(22, 64, 214);
+  background-color: rgb(27, 76, 255);
+  border: 2px solid rgb(27, 76, 255);
   border-radius: 5px;
   margin-left: 10px;
 }
 .nav-menu a:hover {
   color: black;
   background-color: white;
-  border: 2px solid rgb(22, 64, 214);
+  border: 2px solid rgb(27, 76, 255);
 }
 .no-margin-left-list {
   margin-left: -35px !important;
@@ -180,8 +180,16 @@ a {
   }
 }
 
+/* Large Smartphone */
+@media screen and (max-width: 600px) {
+  .brand-title { margin-left: 15px; }
+  .brand-logo { margin-right: -5px; margin-left: 10px; }
+  .menu-container { right: 15px; }
+}
+
 /* iPhone X */
 @media screen and (max-width: 376px) {
-  .brand-title { margin-left: 15px; }
+  .brand-title { margin-left: 25px; }
+  .brand-logo { margin-right: -20px; }
   .menu-container { right: 15px; }
 }
