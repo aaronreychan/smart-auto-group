@@ -322,10 +322,15 @@ video {
   color: white;
 }
 .footer-icon:hover {
-  color: black;
+  color: #6DBE45;
   cursor: pointer;
 }
+.loans-logo {
+  margin-top: 10px;
+}
 
+
+/* ------------------------------------ */
 .show-desktop { display: inherit; }
 .show-mobile { display: none; }
 .action-button-container { display: none; }
@@ -389,10 +394,11 @@ video {
   .process-caption-small-3 { margin-left: 15px; }
   .process-button { margin-left: -23.5%; }
   .fa-key { margin-left: -19px; }
-  #footer { height: 580px; }
+  #footer { height: 650px; }
   .footer-container { left: 0; }
   .footer-icon { margin-right: 37px; }
   .footer-text { width: 100%; margin-bottom: 40px; }
+  .loans-logo { margin-top: 25px; }
   .action-button-container { 
     height: 70px; 
     width: 100%; 
@@ -411,12 +417,13 @@ video {
 @media screen and (max-width: 376px) {
   .title-group { left: 15px; margin-right: 10px; }
   .home-title { font-size: 1.6rem; }
-  #footer { height: 570px; }
   .button { padding: 10px 14px 8px; font-size: .9rem; }
   .button-group .button { font-size: .85rem; }
   .process-title { margin: auto 12px; }
   .process-caption-2 { margin-left: -83px; position: relative; left: 23px; }
   .process-button { width: auto; }
+  #footer { height: 640px; }
   .footer-container { left: 5px; width: 80%; }
   .footer-icon { margin-right: 35px; }
+  .loans-logo { margin-top: 20px; }
 } 

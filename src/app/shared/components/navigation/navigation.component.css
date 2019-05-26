@@ -32,6 +32,14 @@ a {
   font-family: Michroma; 
   margin-left: 25px;
   margin-top: 0;
+  margin-bottom: 0;
+}
+.brand-subtitle {
+  margin-top: 0;
+  margin-left: 25px;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .nav-wrapper {
   display: flex; 
@@ -91,13 +99,15 @@ a {
 /* Laptop ----------------------***********------------------ */
 @media screen and (max-width: 1800px) {
   .brand-logo { height: 20px; }
-  .brand-title { font-size: 1.5rem; }
+  .brand-title { font-size: 1.5rem; margin-top: 5px; }
+  .brand-subtitle { font-size: .95rem; }
 }
 
 /* Smaller Laptops ---------***********------------------ */
 @media screen and (max-width: 1596px) {
   .brand-logo { margin-right: -20px; }
   .brand-title { font-size: 1.1rem; font-weight: bold; margin-top: 5px; }
+  .brand-subtitle { font-size: .8rem; }
   .nav-menu a { padding: 4px 7px; font-size: 14px; }
   .nav-background { height: 50px; }
   .nav-items { margin-top: -19px; }
@@ -105,12 +115,13 @@ a {
 
 /* Mobile Nav */
 /* iPad - Horizontal */
-@media screen and (max-width: 1274px) {
+@media screen and (max-width: 1320px) {
   /* Navigation */
   #menu-bars { display: initial; }
   .desktop-none { display: initial; }
   .nav-background { z-index: 21; }
   .brand-title { margin-left: 30px; }
+  .brand-subtitle { margin-left: 30px; }
   .nav-menu { 
     top: -300px; 
     left: -20px; 
@@ -183,6 +194,7 @@ a {
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
   .brand-title { margin-left: 15px; }
+  .brand-subtitle { margin-left: 15px; font-size: .72rem; }
   .brand-logo { margin-right: -5px; margin-left: 10px; }
   .menu-container { right: 15px; }
 }
@@ -190,6 +202,7 @@ a {
 /* iPhone X */
 @media screen and (max-width: 376px) {
   .brand-title { margin-left: 25px; font-size: 1rem; }
+  .brand-subtitle { margin-left: 25px; font-size: .65rem; }
   .brand-logo { margin-right: -20px; }
   .menu-container { right: 15px; }
 }
