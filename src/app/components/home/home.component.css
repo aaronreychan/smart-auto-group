@@ -16,6 +16,7 @@ section {
   position: relative; 
 }
 a { color: unset; }
+a:hover { color: black; }
 
 
 /* Home section ----------------------------------------------------------------------- */
