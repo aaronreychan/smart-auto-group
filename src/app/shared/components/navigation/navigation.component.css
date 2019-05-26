@@ -95,7 +95,7 @@ a {
 }
 
 /* Smaller Laptops ---------***********------------------ */
-@media screen and (max-width: 1487px) {
+@media screen and (max-width: 1596px) {
   .brand-logo { margin-right: -20px; }
   .brand-title { font-size: 1.1rem; font-weight: bold; margin-top: 5px; }
   .nav-menu a { padding: 4px 7px; font-size: 14px; }
