@@ -10,6 +10,7 @@
 /* Navigation */
 a {
   text-decoration: none;
+  color: unset;
 }
 .nav-background {
   position: fixed;
