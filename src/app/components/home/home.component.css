@@ -50,7 +50,6 @@ video {
 .title-group {
   font-family: Montserrat, sans-serif;
   color: white; 
-  z-index: 2;
   position: absolute;
   top: 260px;
   left: 80px;
