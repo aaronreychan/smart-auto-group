@@ -166,11 +166,11 @@ position:absolute;
 }
 .button:hover {
   color: black;
-  background-color: rgb(255, 255, 255);
+  background-color: #f1592a;
 }
 .button:active {
   box-shadow: 0 2px #666;
-  background-color: rgb(255, 255, 255);
+  background-color: #f1592a;
   transform: translateY(2px);
 }
 .margin-auto {

@@ -135,7 +135,6 @@ position:absolute;
 .budget-slider-container {
   text-align: center;
 }
-
 .budget-title {
   margin-top: 50px;
 }
@@ -144,16 +143,20 @@ position:absolute;
 .car-select-container {
   text-align: center;
 }
-
 .car-title {
   margin-top: 50px;
 }
-
 .card-img-top {
   width: 70%; 
   margin: auto;
   margin-top: 10px; 
   margin-bottom: -10px;
+}
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked ~ label {
+  background-color: #f1592a;
 }
 
 /* Button */
@@ -198,13 +201,11 @@ position:absolute;
   flex-direction: column;
   justify-content: center;
 }
-
 .position-left {
   position: absolute;
   top: 150px;
   left: 100px;
 }
-
 .position-right {
   position: absolute;
   top: 150px;
