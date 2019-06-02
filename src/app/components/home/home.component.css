@@ -146,7 +146,7 @@ video {
 
 /* Car Carousel */
 .car-name { text-align: center; }
-.margin-auto { left: -30.5%; position: relative; }
+.margin-auto { left: 35%; position: relative; }
 .car-container .button:hover { background-color: rgb(175, 175, 175); color: white; }
 
 
@@ -382,7 +382,6 @@ video {
   .about-text { font-size: 1rem; }
   .about-img img { height: 340px; }
   .button { padding: 16px 16px 12px; font-size: 1rem; }
-  .margin-auto { left: unset; }
   .quote-title { margin: 15px; font-size: 1.4rem; }
   #reviewCarouselMobile .review-text { min-height: 168px; }
   #mobile-review-carousel { margin-top: 50px; }
