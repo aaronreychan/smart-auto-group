@@ -156,8 +156,6 @@ position:absolute;
   margin-bottom: -10px;
 }
 
-
-
 /* Button */
 .button { 
   background-color: rgb(27, 76, 255);
@@ -194,14 +192,68 @@ position:absolute;
   background-color: #37b601;
 }
 
+/* Logos */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.position-left {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+.position-right {
+  position: absolute;
+  top: 150px;
+  right: 100px; 
+}
+
 /* Media Queries */
+
+/* Laptop */
+@media screen and (max-width: 1800px) {
+  .position-left { left: 2.5%; }
+  .position-right { right: 2.5%; }
+}
+
+@media screen and (max-width: 1567px) {
+  .logo-img { height: 100px; }
+  .position-left { top: 430px; }
+  .position-right { top: 430px; }
+}
+
+@media screen and (max-width: 1445px) {
+  .position-left { left: 1%; }
+  .position-right { right: 1%; }
+}
+
+@media screen and (max-width: 1367px) {
+  .logo-img { height: 70px; }
+  .position-left { top: 540px; }
+  .position-right { top: 540px; }
+}
+
+@media screen and (max-width: 1297px) {
+  .logo-img { height: 50px; }
+  .position-left { position: relative; top: -30px; left: unset; }
+  .position-right { position: relative; top: -30px; left: 1px; }
+}
+
+/* Large Smartphone */
 @media screen and (max-width: 600px) {
+  h5 { font-size: 1.15rem; }
   .card-deck { flex-direction: row; margin-top: -5px; }
   .card-img-top { margin-top: 10px; margin-bottom: -10px; }
   .show-desktop { display: none; }
   .show-mobile { display: initial; }
   .budget-title { margin-top: 20px; }
   .car-title { margin-top: 30px; }
-  h5 { font-size: 1.15rem; }
   .margin-auto { margin-top: -20px; margin-bottom: 30px; }
+  .logo-container { flex-direction: row; }
+  .logo-img { height: 50px; }
+  .position-left { position: relative; top: -30px; left: unset; }
+  .position-right { position: relative; top: -30px; left: 1px; }
 }

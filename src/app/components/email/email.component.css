@@ -5,6 +5,7 @@
   height: 100vh;
   width: 100vw;
   padding-top: 70px; 
+  overflow-y: auto;
   background-color: rgb(250, 250, 250);
   background-image: url("../../../assets/img/car-interior.jpg");
   background-position: center;
@@ -128,8 +129,9 @@ position:absolute;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
   width: 40%;
   padding: 50px;
+  padding-bottom: 35px;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .email-title {
   text-transform: uppercase;
@@ -140,14 +142,7 @@ position:absolute;
 .input-field {
   width: 250px;
   margin: auto;
-  margin-top: 25px;
-}
-
-@media screen and (max-width: 600px) {
-  .email-container {
-    width: 100%;
-    padding: 10px;
-  }
+  margin-top: 15px;
 }
 
 /* Button */
@@ -171,15 +166,49 @@ position:absolute;
 }
 .button:hover {
   color: black;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
 }
 .button:active {
   box-shadow: 0 2px #666;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
   transform: translateY(2px);
 }
 .margin-auto {
   position: relative;
+  top: -15px;
   left: 10px;
   background-color: #37b601;
+}
+
+/* Logos */
+.logo-container { display: flex; flex-direction: row; }
+.logo-img { height: 50px; margin-right: 10px; }
+.position-left { position: relative; top: -30px; left: -35px; }
+.position-right { position: relative; top: 15px; left: -35px; }
+
+
+/* Media Queries */
+
+/* Laptop */
+@media screen and (max-width: 1800px) {
+  .email-container { margin-top: 50px; }
+}
+
+@media screen and (max-width: 1265px) {
+  .email-container { width: 465px; padding: 10px; }
+  .logo-container { justify-content: center; }
+  .position-left { top: unset; left: unset; }
+  .position-right { top: unset; left: unset; }
+}
+
+/* Large Smartphone */
+@media screen and (max-width: 600px) {
+  .email-container { width: 100%; padding: 10px; }
+  .email-group { position: relative; top: 15px; }
+  .logo-img { height: 40px; }
+}
+
+/* iPhone */
+@media screen and (max-width: 376px) {
+  .logo-img { height: 35px; }
 }
