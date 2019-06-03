@@ -258,3 +258,9 @@ input[type=radio]:checked ~ label {
   .position-left { position: relative; top: -30px; left: unset; }
   .position-right { position: relative; top: -30px; left: 1px; }
 }
+
+/* iPhone */
+@media screen and (max-width: 376px) {
+  h5 { font-size: 1.05rem; }
+  .margin-auto { margin-bottom: 130px; }
+}
