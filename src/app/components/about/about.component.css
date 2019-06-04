@@ -88,5 +88,10 @@
 @media screen and (max-width: 600px) {
   .about-wrapper { padding-top: 50px; }
   .page-title { font-size: 2.2rem; text-align: center; margin: auto 50px; }
-  .button { margin-bottom: 30px; }
+  .button { margin-bottom: 30px; margin-top: 0; }
+}
+
+/* iPhone */
+@media screen and (max-width: 376px) {
+  .margin-bottom { margin-bottom: 130px; margin-top: 0; }
 }
