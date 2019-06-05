@@ -23,6 +23,113 @@
   color: white;
   font-size: 3rem;
 }
+.section-title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
+}
+
+/* Q/A */
+.question {
+  color: rgb(27, 76, 255);
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.answer {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.question-container {
+  margin: 50px 20%;
+}
+.question-title {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 20%;
+  border-top: 1px solid rgb(190, 190, 190);
+  padding-top: 35px;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  padding-bottom: 15px;
+}
+.card-sm {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.icon {
+  font-size: 5rem;
+  margin: auto;
+  margin-bottom: 10px;
+  color: rgb(27, 76, 255);
+}
+.card-sm-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card-sm-text {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Questions */
+.contact-container {
+  margin: 25px 20%;
+}
+.contact-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-text {
+  text-align: center;
+  margin-top: 20px;
+}
+.phone-icon {
+  margin-left: 5px;
+}
+
+/* Button */
+.button { 
+  background-color: #37b601;
+  border: none;
+  color: white;
+  width: 350px;
+  padding: 10px 20px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 10px auto;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px rgb(105, 105, 105);
+}
+.button:hover {
+  color: black;
+  background-color: #f1592a;
+}
+.button:active {
+  box-shadow: 0 2px #666;
+  background-color: #f1592a;
+  transform: translateY(2px);
+}
+.margin-auto {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-bottom: 40px;
+  background-color: #37b601;
+}
 
 /* Media Queries */
 
@@ -34,4 +141,17 @@
 @media screen and (max-width: 600px) {
   .faqs-wrapper { padding-top: 50px; }
   .page-title { font-size: 2.2rem; text-align: center; margin: auto 50px; }
+  .section-title { font-size: 1.6rem; margin: 50px; }
+  .question-container { margin: 50px 25px; }
+  .cards-container { flex-direction: column; margin: 50px 25px; }
+  .card-sm { width: 100%; }
+  .contact-container { margin: 50px 25px; }
+  .contact-title { margin: auto 50px; }
+}
+
+/* iPhone */
+@media screen and (max-width: 376px) {
+  .page-title { font-size: 2rem; margin: auto 30px; }
+  .section-title { margin: 50px 30px; }
+  .margin-auto { margin-bottom: 130px; }
 }
