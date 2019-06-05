@@ -152,12 +152,40 @@ position:absolute;
   margin-top: 10px; 
   margin-bottom: -10px;
 }
+.card-select label {
+  background-color: rgb(27, 76, 255);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 10px auto;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px rgb(105, 105, 105);
+}
+.card-select label span {
+  text-align:center;
+  font-size: 1.2rem;
+  padding: 10px 20px 12px;
+  border-radius: 5px;
+  display:block;
+}
+.card-select label input {
+  position:absolute;
+  top:-20px;
+}
+.card-select input:checked + span {
+  background-color: #f1592a;
+  color:#F7F7F7;
+}
 input[type=radio] {
   display: none;
 }
-input[type=radio]:checked ~ label {
-  background-color: #f1592a;
-}
+
 
 /* Button */
 .button { 
@@ -172,7 +200,7 @@ input[type=radio]:checked ~ label {
   text-transform: uppercase;
   margin: 10px auto;
   margin-right: 15px; 
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 5px;
