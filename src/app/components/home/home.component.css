@@ -327,6 +327,9 @@ video {
 .loans-logo {
   margin-top: 10px;
 }
+.middle-footer {
+  left: -30px;
+}
 
 
 /* ------------------------------------ */
@@ -398,6 +401,7 @@ video {
   .footer-icon { margin-right: 37px; }
   .footer-text { width: 100%; margin-bottom: 40px; }
   .loans-logo { margin-top: 25px; }
+  .middle-footer { left: unset; }
   .action-button-container { 
     height: 70px; 
     width: 100%; 
