@@ -57,6 +57,8 @@ video {
 .home-title { font-size: 3.8rem; }
 .home-subtitle { font-size: 1.5rem; }
 .home-subtitle-2 { font-size: 1.5rem; margin-top: 10px; }
+
+/* Button */
 .button { 
   background-color: rgb(27, 76, 255);
   border: none;
@@ -411,7 +413,7 @@ video {
     background-color: white; 
     z-index: 30; 
     display: inherit;
-    border-top: 5px solid black;
+    border-top: 2.5px solid black;
   }
   .action-button { text-align: center; text-transform: uppercase; margin-top: 15px; }
 }

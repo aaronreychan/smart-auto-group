@@ -1,5 +1,161 @@
 <div class="inventory-wrapper">
-    <div class="page-title-container">
-      <h1 class="page-title">Select Your Vehicle</h1>
-    </div>
+  <div class="page-title-container">
+    <h1 class="page-title">Select Your Vehicle</h1>
   </div>
+  <h2 class="section-title">Choose what fits your lifestyle!</h2>
+  <h4 class="section-subtitle">Smart Auto Group makes sure that you have access to one of Ontario’s biggest and widest inventory of vehicles.</h4>
+  <!-- Car Carousel (Desktop) -->
+  <div class="container carousel-container show-desktop" id="car-carousel">
+    <div id="dataInfo">
+      <div id="carCarouselDesktop" class="carousel slide" data-ride="carousel" data-interval="8000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-1.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">&nbsp;&nbsp;4-Door Sedan
+                    <span><i class="fas fa-info-circle info-circle" title="Honda Accord"></i></span>
+                  </h4>
+                  <a routerLink="/budget" routerLinkActive="active"><button class="button car-button col-md-4 margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-2.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">&nbsp;&nbsp;Pickup Truck
+                    <span><i class="fas fa-info-circle info-circle" title="Ford F-150"></i></span>
+                  </h4>
+                  <a routerLink="/budget" routerLinkActive="active"><button class="button car-button col-md-4 margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-3.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">&nbsp;&nbsp;Sport Utility Vehicle
+                      <span><i class="fas fa-info-circle info-circle" title="Jeep Cherokee"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button col-md-4 margin-auto">Select</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-4.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Minivan 
+                      <span><i class="fas fa-info-circle info-circle" title="Dodge Caravan"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-5.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Hybrid/Electric
+                      <span><i class="fas fa-info-circle info-circle" title="Chevrolet Volt"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-6.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Exotic 
+                      <span><i class="fas fa-info-circle info-circle" title="Lamborghini Huracan"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carCarouselDesktop" role="button" data-slide="prev">
+            <i class="fas fa-chevron-left arrow-icon"></i>
+        </a>
+        <a class="carousel-control-next" href="#carCarouselDesktop" role="button" data-slide="next">
+            <i class="fas fa-chevron-right arrow-icon"></i>
+        </a>
+      </div>
+    </div>      
+  </div>
+
+  <!-- Car Carousel (Mobile) -->
+  <div class="container-fluid mobile-carousel-container show-mobile" id="mobile-car-carousel">
+      <div id="carCarouselMobile" class="carousel slide" data-ride="carousel" data-interval="8000">
+          <div class="carousel-inner row w-100 mx-auto" role="listbox">
+              <div class="carousel-item col-md-3 active">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-1.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">4-Door Sedan
+                    <span><i class="fas fa-info-circle info-circle" title="Honda Accord"></i></span>
+                  </h4>
+                  <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="carousel-item col-md-3">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-2.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Pickup Truck
+                    <span><i class="fas fa-info-circle info-circle" title="Ford F-150"></i></span>
+                  </h4>
+                  <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="carousel-item col-md-3">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-3.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Sport Utility Vehicle
+                      <span><i class="fas fa-info-circle info-circle" title="Jeep Cherokee"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>  
+              </div>
+              <div class="carousel-item col-md-3">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-4.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Minivan
+                      <span><i class="fas fa-info-circle info-circle" title="Dodge Caravan"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="carousel-item col-md-3">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-5.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Hybrid/Electric
+                      <span><i class="fas fa-info-circle info-circle" title="Chevrolet Volt"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+              <div class="carousel-item col-md-3">
+                <div class="card car-container">
+                  <img src="../../../assets/img/car-6.png" class="card-img-top img-fluid" alt="">
+                  <h4 class="car-name">Exotic
+                      <span><i class="fas fa-info-circle info-circle" title="Lamborghini Huracan"></i></span>
+                    </h4>
+                    <a routerLink="/budget" routerLinkActive="active"><button class="button car-button margin-auto">Select</button></a>
+                </div>
+              </div>
+  
+          </div>
+          <a class="carousel-control-prev" href="#carCarouselMobile" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left fa-lg text-muted"></i>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next text-faded" href="#carCarouselMobile" role="button" data-slide="next">
+              <i class="fa fa-chevron-right fa-lg text-muted"></i>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </div>
+
+  <!-- Apply Now -->
+  <div class="action-button-container">
+    <a routerLink="/budget" routerLinkActive="active"><h4 class="action-button">Click here to Apply Now!</h4></a>
+  </div>
+  
+</div>

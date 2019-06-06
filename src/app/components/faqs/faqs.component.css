@@ -135,6 +135,20 @@
 
 /* Laptop */
 @media screen and (max-width: 1800px) {
+  .faqs-wrapper { padding-top: 50px; }
+  .page-title-container { height: 120px; }
+  .section-title { margin: 25px auto; }
+  .question-container { margin: 25px 15%; }
+  .cards-container { margin: 25px 15%; }
+  .contact-container { margin: 25px 15%; }
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1550px) {
+  .question-container { margin: 25px 10%; }
+  .cards-container { margin: 25px 10%; }
+  .contact-container { margin: 25px 10%; }
+  .card-sm { width: 25%; }
 }
 
 /* Large Smartphone */
