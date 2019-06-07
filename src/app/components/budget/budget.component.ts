@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Criteria } from '../../entities/criteria';
+import { MyCookieService } from '../../services/cookieService';
+import { AppConstants } from 'src/app/constants/AppConstants';
+
 declare var $: any;
 @Component({
   selector: 'app-budget',
@@ -7,9 +11,14 @@ declare var $: any;
 })
 export class BudgetComponent implements OnInit {
 
-  constructor() { }
+  criteria: Criteria;
+
+  constructor(private myCookieService: MyCookieService) { }
 
   ngOnInit() {
+    this.myCookieService.storeCookie(AppConstants.cookieBudget, '200');
+    //this.criteria.budget = this.myCookieService.getCookie(AppConstants.cookieBudget);
+
     $(".js-range-slider").ionRangeSlider({
       type: "single",
       prefix: "$",

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CookieModule } from 'ngx-cookie';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -15,6 +16,8 @@ import { BudgetEstimatorComponent } from './components/budget-estimator/budget-e
 import { InventoryComponent } from './components/inventory/inventory.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+import { MyCookieService } from './services/cookieService';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -38,7 +41,7 @@ const appRoutes: Routes = [
     BudgetEstimatorComponent,
     InventoryComponent,
     FaqsComponent,
-    ReviewsComponent
+    ReviewsComponent,
   ],
   imports: [
     RouterModule.forRoot(
@@ -46,9 +49,12 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
+    CookieModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [
+    MyCookieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
