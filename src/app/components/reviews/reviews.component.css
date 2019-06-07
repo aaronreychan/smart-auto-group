@@ -4,12 +4,13 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(255, 255, 255);
   overflow-y: auto;
   font-size: 1.2rem;
   padding-top: 80px;
 }
 
+/* Title */
 .page-title-container {
   height: 180px;
   width: 100%;
@@ -23,6 +24,43 @@
   color: white;
   font-size: 3rem;
 }
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+/* Carousel */
+.container { max-width: unset !important; }
+.card { border: none; }
+.carousel-container { width: 80vw !important; }
+.carousel-control-next { right: -10%; }
+.carousel-control-prev { left: -10%; }
+.arrow-icon { color: black; font-size: 2rem; }
+.mobile-carousel-container { width: 85%; }
+
+/* Review Carousel */
+#review-carousel { margin-top: 50px; }
+.review-container img { 
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+.review-name { 
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.8rem;
+}
+.review-stars { margin: auto; }
+.star { color: #F8D64E; }
+.review-subtitle { text-align: center; }
+.review-text { text-align: center; margin-top: 10px; }
+
+/* ------------------------------------ */
+.show-desktop { display: inherit; }
+.show-mobile { display: none; }
+.action-button-container { display: none; }
 
 /* Media Queries */
 
@@ -34,6 +72,24 @@
 
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
+  .show-desktop { display: none; }
+  .show-mobile { display: inherit; }
   .reviews-wrapper { padding-top: 50px; }
   .page-title { font-size: 2.2rem; text-align: center; margin: auto 50px; }
+  #reviewCarouselMobile .review-text { min-height: 168px; }
+  #mobile-review-carousel { margin-top: 25px; }
+  .section-title { margin: 25px 50px; font-size: 1.8rem; }
+  .section-subtitle { font-size: 1.2rem; margin: 25px; }
+  .action-button-container { 
+    height: 70px; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    background-color: white; 
+    z-index: 30; 
+    display: inherit;
+    border-top: 2.5px solid black;
+  }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 15px; }
 }
