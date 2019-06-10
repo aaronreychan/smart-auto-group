@@ -4,6 +4,7 @@ import { MyCookieService } from '../../services/cookieService';
 import { AppConstants } from 'src/app/constants/AppConstants';
 
 declare var $: any;
+
 @Component({
   selector: 'app-budget',
   templateUrl: './budget.component.html',

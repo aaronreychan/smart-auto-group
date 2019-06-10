@@ -72,11 +72,12 @@
 
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
+  .reviews-wrapper { height: fit-content; }
   .show-desktop { display: none; }
   .show-mobile { display: inherit; }
   .reviews-wrapper { padding-top: 50px; }
   .page-title { font-size: 2.2rem; text-align: center; margin: auto 50px; }
-  #reviewCarouselMobile .review-text { min-height: 168px; }
+  #reviewCarouselMobile .review-text { min-height: 224px; }
   #mobile-review-carousel { margin-top: 25px; }
   .section-title { margin: 25px 50px; font-size: 1.8rem; }
   .section-subtitle { font-size: 1.2rem; margin: 25px; }
@@ -92,4 +93,10 @@
     border-top: 2.5px solid black;
   }
   .action-button { text-align: center; text-transform: uppercase; margin-top: 15px; }
+}
+
+/* iPhone */
+@media screen and (max-width: 376px) {
+  #reviewCarouselMobile .review-text { min-height: 224px; font-size: 1rem; }
+  #mobile-review-carousel { margin-top: -15px; position: relative; z-index: -1; }
 }
