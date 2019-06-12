@@ -15,7 +15,6 @@ section {
   height: auto; 
   position: relative; 
 }
-a { color: unset; }
 a:hover { color: black; }
 
 
@@ -405,7 +404,7 @@ video {
   .loans-logo { margin-top: 25px; }
   .middle-footer { left: unset; }
   .action-button-container { 
-    height: 70px; 
+    height: 60px; 
     width: 100%; 
     position: fixed; 
     bottom: 0; 
@@ -415,7 +414,7 @@ video {
     display: inherit;
     border-top: 2.5px solid black;
   }
-  .action-button { text-align: center; text-transform: uppercase; margin-top: 15px; }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
 }
 
 /* iPhone X */

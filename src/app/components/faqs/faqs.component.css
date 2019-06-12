@@ -32,7 +32,7 @@
 
 /* Q/A */
 .question {
-  color: rgb(27, 76, 255);
+  color: #007bff;
   text-transform: uppercase;
   margin-top: 25px;
 }
@@ -132,6 +132,9 @@
   background-color: #37b601;
 }
 
+/* -------------------------------- */
+.action-button-container { display: none; }
+
 /* Media Queries */
 
 /* Laptop */
@@ -156,17 +159,32 @@
 @media screen and (max-width: 600px) {
   .faqs-wrapper { padding-top: 50px; }
   .page-title { font-size: 2.2rem; text-align: center; margin: auto 50px; }
-  .section-title { font-size: 1.6rem; margin: 50px; }
+  .section-title { display: none; }
   .question-container { margin: 50px 25px; }
+  .question { font-size: 1.2rem; }
+  .answer { font-size: 1rem; }
   .cards-container { flex-direction: column; margin: 50px 25px; }
   .card-sm { width: 100%; }
+  .card-margin-top { margin-top: 10px; }
   .contact-container { margin: 50px 25px; }
   .contact-title { margin: auto 50px; }
+  .action-button-container { 
+    height: 60px; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    background-color: white; 
+    z-index: 30; 
+    display: inherit;
+    border-top: 2.5px solid black;
+  }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
 }
 
 /* iPhone */
 @media screen and (max-width: 376px) {
   .page-title { font-size: 2rem; margin: auto 30px; }
-  .section-title { margin: 50px 30px; }
-  .margin-auto { margin-bottom: 130px; }
+  .margin-auto { margin-bottom: 140px; }
+  .question { font-size: 1.1rem; }
 }

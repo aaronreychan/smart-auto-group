@@ -96,4 +96,5 @@
 /* iPhone */
 @media screen and (max-width: 376px) {
   .margin-bottom { margin-bottom: 130px; margin-top: 0; }
+  .page-title { font-size: 2rem; margin: auto 25px; }
 }

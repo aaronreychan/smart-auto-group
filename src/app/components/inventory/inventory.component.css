@@ -9,7 +9,6 @@
   font-size: 1.2rem;
   padding-top: 80px;
 }
-a { color: unset; }
 
 /* Titles */
 .page-title-container {
@@ -106,7 +105,7 @@ a { color: unset; }
   .section-subtitle { font-size: 1.2rem; margin: 25px; }
   .button { padding: 16px 16px 12px; font-size: 1rem; }
   .action-button-container { 
-    height: 70px; 
+    height: 60px; 
     width: 100%; 
     position: fixed; 
     bottom: 0; 
@@ -116,7 +115,7 @@ a { color: unset; }
     display: inherit;
     border-top: 2.5px solid black;
   }
-  .action-button { text-align: center; text-transform: uppercase; margin-top: 15px; }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
 }
 
 /* iPhone */

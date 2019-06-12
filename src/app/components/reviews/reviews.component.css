@@ -82,7 +82,7 @@
   .section-title { margin: 25px 50px; font-size: 1.8rem; }
   .section-subtitle { font-size: 1.2rem; margin: 25px; }
   .action-button-container { 
-    height: 70px; 
+    height: 60px; 
     width: 100%; 
     position: fixed; 
     bottom: 0; 
@@ -92,11 +92,13 @@
     display: inherit;
     border-top: 2.5px solid black;
   }
-  .action-button { text-align: center; text-transform: uppercase; margin-top: 15px; }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
 }
 
 /* iPhone */
 @media screen and (max-width: 376px) {
   #reviewCarouselMobile .review-text { min-height: 224px; font-size: 1rem; }
   #mobile-review-carousel { margin-top: -15px; position: relative; z-index: -1; }
+  .review-container > img { height: 75px; width: 75px; }
+  .review-name { font-size: 1.4rem; }
 }
