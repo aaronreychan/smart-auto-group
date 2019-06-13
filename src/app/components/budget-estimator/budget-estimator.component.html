@@ -5,23 +5,23 @@
   </div>
 
   <!-- Calculator -->
-  <div class="container calculator-container">
+  <div class="container calc-container">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-12 left-calc">
         <h2 class="calc-title">Tell Us About Your Credit Rating</h2>
         <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Poor</button> <!--data-credit-type="poor" data-selected="true"-->
-          <button type="button" class="btn btn-secondary">Average</button>
-          <button type="button" class="btn btn-secondary">Good</button>
-          <button type="button" class="btn btn-secondary">Excellent</button>
+          <button type="button" class="btn btn-secondary extra-padding">Poor</button> <!--data-credit-type="poor" data-selected="true"-->
+          <button type="button" class="btn btn-secondary extra-padding">Average</button>
+          <button type="button" class="btn btn-secondary extra-padding">Good</button>
+          <button type="button" class="btn btn-secondary extra-padding">Excellent</button>
         </div>
-        <h3 class="calc-subtitle">Amount ($5000 - $75000)</h3>
-        <input type="text" class="js-range-slider-1" name="my_range" value="" />
-        <h3 class="calc-subtitle">Months (12 - 96)</h3>
-        <input type="text" class="js-range-slider-2" name="my_range" value="" />
-        <p class="calc-text">Our Online Pre-Approval Process is Fast, Easy and Very Convenient. No Hassles. Apply from the comfort of your home via any smartphone!</p>
+        <h3 class="calc-subtitle extra-margin">Amount ($5000 - $75000)</h3>
+        <input type="text" class="js-range-slider-1 slider" name="my_range" value="" />
+        <h3 class="calc-subtitle extra-margin">Months (12 - 96)</h3>
+        <input type="text" class="js-range-slider-2 slider" name="my_range" value="" />
+        <p class="calc-text-left">Our Online Pre-Approval Process is Fast, Easy and Very Convenient. No Hassles. Apply from the comfort of your home via any smartphone!</p>
       </div>
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-12 right-calc">
         <div class="dropdown">
           <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Payment Schedule
@@ -33,9 +33,9 @@
           </div>
         </div>
         <div class="calc-total">
-          <h1 class="big-number">$200</h1>
+          <h1 class="big-number"><span class="dollar">$</span>200</h1>
         </div>
-        <p class="calc-text">Regardless of your credit standing, Approval Team is here to make your search for the best vehicle hassle-free.</p>
+        <p class="calc-text">Regardless of your credit standing, we are here to make your search for the best vehicle hassle-free.</p>
         <button class="button margin-auto">Get Approved Today!</button>
         <p class="small-text">***This tool will calculate an estimated amount based on the information you give and is intended for general information purposes only. Don’t count on this tool for specific financial guidance of any sort.</p>
       </div>
@@ -47,12 +47,17 @@
         <div class="col-md-6 col-sm-12">
           <p class="budget-text">This tool is intended to help you get an overview of your auto loan approval options. This is just a pre-application phase where you get basic information about your car loan financing options. Once you apply with Approval Team, our competent Finance Specialist will contact you and provide you with a more solid and precise set of options.</p>
         </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="budget-text">Not only do we assist everyone and anyone from anywhere in Ontario. We also specialize in helping people with bad credit history and realign their auto loan options by providing them with the best offers possible in their local area. The fastest we can get you approved is 24 hours. Get your auto financing options now, apply online via smartphone – it’s 100% FREE.</p>
+        <div class="col-md-6 col-sm-12 extra-margin-mobile">
+          <p class="budget-text">Not only do we assist everyone and anyone from anywhere in Ontario. We also specialize in helping people with bad credit history, by providing them with the best offers possible in their local area. The fastest we can get you approved is 24 hours. Get your auto financing options now, apply online via smartphone – it’s 100% FREE.</p>
         </div>
       </div>
     </div>
 
+  </div>
+
+  <!-- Apply Now -->
+  <div class="action-button-container">
+    <a routerLink="/budget" routerLinkActive="active"><h4 class="action-button">Click here to Apply Now!</h4></a>
   </div>
 
 <!-- End Wrapper -->

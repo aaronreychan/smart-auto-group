@@ -4,7 +4,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(255, 255, 255);
   overflow-y: auto;
   font-size: 1.2rem;
   padding-top: 80px;
@@ -26,26 +26,81 @@
 }
 
 /* Calculator */
-/* .calculator-container {
-  display: flex;
-  flex-direction: row;
-} */
-
-.right-calculator {
-  display: initial;
+.calc-container {
+  margin-bottom: 50px;
 }
 
-.dropdown {
+/* Left Calc */
+.left-calc {
+  margin-top: 50px;
+  margin-right: -10px;
+  padding-right: 35px !important;
+}
+.calc-subtitle {
+  margin: 20px auto;
+}
+.extra-margin {
+  margin-top: 50px;
+}
+.calc-text-left {
+  margin-top: 25px;
+  text-align: left;
+  font-size: 1rem;
+}
+.extra-padding {
+  padding: .5rem 1.72rem;
+}
 
+/* Right Calc */
+.right-calc {
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  margin: 50px auto;
+  margin-left: 10px;
+  margin-right: -10px;
+}
+.dropdown {
+  margin: 50px 50px -25px;
 }
 .dropdown-menu {
   width: 218px;
 }
+.calc-total {
+  margin: 50px;
+  margin-bottom: 35px;
+}
+.dollar {
+  font-size: 3rem;
+  position: relative;
+  top: -30px;
+}
+.big-number {
+  font-size: 6rem;
+  font-weight: normal;
+  color: #006CFA;
+  text-align: center;
+}
+.calc-text {
+  margin: auto 50px;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.small-text {
+  font-size: 1rem;
+  margin: auto 50px;
+  margin-bottom: 50px;
+}
+
 .budget-title {
   text-align: center;
+  font-weight: bold;
+  color: #006CFA;
+  margin-bottom: 25px;
 }
 .budget-text {
   text-align: justify;
+  font-size: 1.2rem;
 }
 
 /* Button */
@@ -85,6 +140,8 @@
   background-color: #37b601;
 }
 
+/* -------------------------------------- */
+.action-button-container { display: none; }
 
 /* Media Queries */
 
@@ -98,4 +155,32 @@
 @media screen and (max-width: 600px) {
   .budget-estimate-wrapper { padding-top: 50px; }
   .page-title { font-size: 2.2rem; text-align: center; margin: auto 50px; }
+  .calc-title { font-size: 1.5rem; }
+  .left-calc { padding-right: 15px !important;}
+  .extra-padding { padding: .5rem 1.07rem; }
+  .extra-margin-mobile { margin-top: 25px; }
+  .right-calc { margin: 25px 15px; }
+  .small-text { margin: auto 25px; margin-bottom: 50px; font-size: .8rem; }
+  .budget-text { font-size: 1rem; margin: auto 2.5px; }
+  .action-button-container { 
+    height: 60px; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    background-color: white; 
+    z-index: 30; 
+    display: inherit;
+    border-top: 2.5px solid black;
+  }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
+}
+
+/* iPhone X */
+@media screen and (max-width: 376px) {
+  .calc-title { font-size: 1.3rem; }
+  .calc-text { margin: auto 25px; }
+  .small-text { font-size: .7rem; }
+  .extra-padding { padding: .5rem .8rem; }
+  .budget-estimator { margin-bottom: 200px; }
 }
