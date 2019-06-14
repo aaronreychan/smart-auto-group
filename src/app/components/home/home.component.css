@@ -16,7 +16,7 @@ section {
   position: relative; 
 }
 a:hover { color: black; }
-
+#phone-number a { color: white; }
 
 /* Home section ----------------------------------------------------------------------- */
 
@@ -354,6 +354,7 @@ video {
   .footer-text { width: 90%; }
 }
 
+/* Small Laptop (1366 x 768) */
 @media screen and (max-width: 1367px) {
   /* About */
   .about-group { width: 32vw; margin-left: 16vw; }
@@ -368,6 +369,43 @@ video {
   .line-1 { width: 65%; }
   .line-2 { width: 88%; }
   .footer-text { width: 100%; }
+}
+
+/* iPad - Horizontal */
+@media screen and (min-width: 900px) and (max-width: 1025px) {
+  .carousel-container { width: 93vw !important; }
+  .car-button { padding: 16px; }
+  .process-subtitle { margin: auto 105px; }
+  .process-container { width: 75vw; margin: auto; margin-left: 16vw; }
+  .process-button { margin-left: 26.5%; }
+  #footer { height: 250px; }
+  .footer-container { width: 90%; left: 30px; }
+}
+
+/* iPad */
+@media screen (min-width: 601px) and (max-width: 769px) {
+  .show-desktop { display: none; }
+  .show-mobile { display: inherit; }
+  .title-group { left: 50px; }
+  .home-title { font-size: 3.5rem; }
+  .home-subtitle { font-size: 1.4rem; }
+  .about-container { flex-direction: column; }
+  .about-group { width: auto; margin: 50px; }
+  .about-img { left: 175px; }
+  #reviews { padding-top: 50px; }
+  #reviewCarouselMobile .review-text { min-height: 100px; }
+  .fa-lg { font-size: 2rem; }
+  .margin-auto { left: 41%; }
+  .quote-title { font-size: 1.8rem; }
+  .process-title { font-size: 3.2rem; }
+  .process-subtitle { margin: auto 25px; }
+  .process-container { width: 93vw; margin: auto; margin-left: 7vw; }
+  .process-button { margin-left: 26.5%; }
+  #footer { height: 230px; }
+  .footer-container { width: 95%; left: 2px; }
+  .footer-title { font-size: 1.4rem; }
+  .footer-text { font-size: .8rem; }
+  .footer-icon { font-size: 1.8rem; margin-right: 24px; }
 }
 
 /* Large Smartphone */

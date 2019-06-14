@@ -95,6 +95,22 @@
   .section-title { margin: 25px auto; }
 }
 
+/* iPad - Horizontal */
+@media screen and (min-width: 900px) and (max-width: 1025px) {
+  .carousel-container { width: 93vw !important; }
+  .button { padding: 16px; }
+  .section-subtitle { margin: 25px; }
+}
+
+/* iPad */
+@media screen and (max-width: 769px) {
+  .show-desktop { display: none; }
+  .show-mobile { display: inherit; }
+  .carousel-container { width: 93vw !important; }
+  .section-subtitle { margin: 25px; }
+  .margin-auto { left: 39%; }
+}
+
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
   .show-desktop { display: none; }
