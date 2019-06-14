@@ -38,7 +38,7 @@
           <div class="card-body">
             <h5 class="card-title">4-Door Sedan</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="carSelected()">
               <label>
                 <input id="car" type="radio" name="car-select">
                 <span>Select</span>
@@ -51,7 +51,7 @@
           <div class="card-body">
             <h5 class="card-title">Pickup Truck</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="carSelected()">
               <label>
                 <input id="truck" type="radio" name="car-select">
                 <span>Select</span>
@@ -64,7 +64,7 @@
           <div class="card-body">
             <h5 class="card-title">Sport Utility Vehicle</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="carSelected()">
               <label>
                 <input id="suv" type="radio" name="car-select">
                 <span>Select</span>
@@ -79,7 +79,7 @@
           <div class="card-body">
             <h5 class="card-title">Minivan</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="carSelected()">
               <label>
                 <input id="minivan" type="radio" name="car-select">
                 <span>Select</span>
@@ -92,7 +92,7 @@
           <div class="card-body">
             <h5 class="card-title">Hybrid/Electric</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="carSelected()">
               <label>
                 <input id="electric" type="radio" name="car-select">
                 <span>Select</span>
@@ -105,7 +105,7 @@
           <div class="card-body">
             <h5 class="card-title">Exotic</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="carSelected()">
               <label>
                 <input id="exotic" type="radio" name="car-select">
                 <span>Select</span>
@@ -123,9 +123,9 @@
           <div class="card-body">
             <h5 class="card-title">4-Door Sedan</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="mobileCarSelected">
               <label>
-                <input id="car" type="radio" name="car-select">
+                <input id="car" type="radio" name="mobile-car-select">
                 <span>Select</span>
               </label>
             </div>
@@ -136,9 +136,9 @@
           <div class="card-body">
             <h5 class="card-title">Pickup Truck</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="mobileCarSelected">
               <label>
-                <input id="truck" type="radio" name="car-select">
+                <input id="truck" type="radio" name="mobile-car-select">
                 <span>Select</span>
               </label>
             </div>
@@ -151,9 +151,9 @@
           <div class="card-body">
             <h5 class="card-title">SUV</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="mobileCarSelected">
               <label>
-                <input id="suv" type="radio" name="car-select">
+                <input id="suv" type="radio" name="mobile-car-select">
                 <span>Select</span>
               </label>
             </div>
@@ -164,9 +164,9 @@
           <div class="card-body">
             <h5 class="card-title">Minivan</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="mobileCarSelected">
               <label>
-                <input id="minivan" type="radio" name="car-select">
+                <input id="minivan" type="radio" name="mobile-car-select">
                 <span>Select</span>
               </label>
             </div>
@@ -179,9 +179,9 @@
           <div class="card-body">
             <h5 class="card-title">Hybrid/Electric</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="mobileCarSelected">
               <label>
-                <input id="electric" type="radio" name="car-select">
+                <input id="electric" type="radio" name="mobile-car-select">
                 <span>Select</span>
               </label>
             </div>
@@ -192,9 +192,9 @@
           <div class="card-body">
             <h5 class="card-title">Exotic</h5>
             <p class="card-text"></p>
-            <div class="card-select">
+            <div class="card-select" (click)="mobileCarSelected">
               <label>
-                <input id="exotic" type="radio" name="car-select">
+                <input id="exotic" type="radio" name="mobile-car-select">
                 <span>Select</span>
               </label>
             </div>

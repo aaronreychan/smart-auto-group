@@ -50,4 +50,14 @@ export class BudgetComponent implements OnInit, AfterViewInit {
     this.myCookieService.storeCookie(name, val);
   }
 
+  carSelected() {
+    var carSelectedType = $("input[type='radio'][name='car-select']:checked");
+    console.log(carSelectedType);
+  }
+
+  mobileCarSelected() {
+    var mobileCarSelectedType = $("input[type='radio'][name='mobile-car-select']:checked");
+    console.log(mobileCarSelectedType);
+  }
+
 }
