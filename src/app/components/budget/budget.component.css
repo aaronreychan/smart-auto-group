@@ -271,6 +271,24 @@ input[type=radio] {
   .position-right { position: relative; top: -30px; left: 1px; }
 }
 
+/* iPad - Horizontal */
+@media screen and (min-width: 900px) and (max-width: 1025px) {
+  /* .logo-container { flex-direction: row; }
+  .logo-img { height: 100px; width: 100px; margin-right: 35px; }
+  .position-left { top: -20px; left: 12px; }
+  .position-right { left: 12px; } */
+  .logo-container { display: none; }
+  .margin-auto { margin-bottom: 70px; }
+}
+
+/* iPad */
+@media screen and (min-width: 601px) and (max-width: 769px) {
+  .logo-container { display: none; }
+  /* .logo-container { flex-direction: row; }
+  .logo-img { height: 100px; } */
+  .margin-auto { margin-bottom: 70px; }
+}
+
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
   h5 { font-size: 1.15rem; }

@@ -98,7 +98,7 @@
 /* iPad - Horizontal */
 @media screen and (min-width: 900px) and (max-width: 1025px) {
   .carousel-container { width: 93vw !important; }
-  .button { padding: 16px; }
+  .button { padding: 10px; }
   .section-subtitle { margin: 25px; }
 }
 

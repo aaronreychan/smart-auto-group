@@ -194,11 +194,22 @@ position:absolute;
   .email-container { margin-top: 50px; }
 }
 
+/* Smaller Laptop */
 @media screen and (max-width: 1265px) {
   .email-container { width: 465px; padding: 10px; }
   .logo-container { justify-content: center; }
   .position-left { top: unset; left: unset; }
   .position-right { top: unset; left: unset; }
+}
+
+/* iPad - Horizontal */
+@media screen and (min-width: 900px) and (max-width: 1025px) {
+
+}
+
+/* iPad */
+@media screen and (min-width: 601px) and (max-width: 769px) {
+  .email-container { margin-top: 100px; }
 }
 
 /* Large Smartphone */

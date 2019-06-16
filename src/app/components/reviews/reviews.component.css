@@ -70,6 +70,20 @@
   .page-title-container { height: 120px; }
 }
 
+/* iPad - Horizontal */
+@media screen and (min-width: 900px) and (max-width: 1025px) {
+  #review-carousel { margin-bottom: 70px; }
+  .section-title { font-size: 2rem; }
+  .review-text { min-height: 280px; }
+}
+
+/* iPad */
+@media screen and (min-width: 601px) and (max-width: 769px) {
+  .carousel-container { width: 94vw !important; }
+  .section-title { font-size: 1.8rem; }
+  .review-text { min-height: 224px; }
+}
+
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
   .reviews-wrapper { height: fit-content; }
