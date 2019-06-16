@@ -383,6 +383,9 @@ video {
   .process-button { margin-left: 26.5%; }
   #footer { height: 250px; width: 100%; }
   .footer-container { width: 90%; left: 30px; }
+  .carousel-control-next, .carousel-control-prev { width: 5% !important; }
+  .carousel-control-next { right: -5% !important; }
+  .carousel-control-prev { left: -5% !important;}
 }
 
 /* iPad */
