@@ -337,6 +337,8 @@ video {
 .show-desktop { display: inherit; }
 .show-mobile { display: none; }
 .action-button-container { display: none; }
+.no-mobile { display: initial; }
+.mobile { display: none; }
 
 /* Media Queries -----------+++++++++------------------------------------------------- */
 
@@ -385,7 +387,7 @@ video {
   .footer-container { width: 90%; left: 30px; }
   .carousel-control-next, .carousel-control-prev { width: 5% !important; }
   .carousel-control-next { right: -5% !important; }
-  .carousel-control-prev { left: -5% !important;}
+  .carousel-control-prev { left: -5% !important; }
 }
 
 /* iPad */
@@ -461,6 +463,48 @@ video {
     border-top: 2.5px solid black;
   }
   .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
+}
+
+/* Large Smartphone - Horizontal */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .title-group { top: 70px; left: 60px; }
+  .about-group { margin-left: 10vw; }
+  .about-img img { left: 35px; }
+  .review-text { min-height: 200px; }
+  .carousel-container { width: 93vw !important; }
+  .carousel-control-next, .carousel-control-prev { width: 5% !important; }
+  .carousel-control-next { right: -5% !important; }
+  .carousel-control-prev { left: -5% !important; }
+  .car-button { padding: 9px; font-size: 1.1rem; }
+  .no-mobile { display: none; }
+  .mobile { display: initial; }
+  .process-subtitle { margin: auto 105px; }
+  .process-container { width: 90vw; margin: auto; margin-left: 9vw; }
+  .process-button { margin-left: 26.5%; }
+  #footer { height: 235px; width: 100%; }
+  .footer-container { width: 93%; left: 10px; }
+  .footer-title { font-size: 1.5rem; }
+  .footer-text { font-size: .8rem; }
+  .footer-icon { margin-right: 24px; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 725px) and (max-height: 376px) {
+  .home-title { font-size: 3.3rem; }
+  .home-subtitle { font-size: 1.3rem; }  
+  .home-subtitle-2 { font-size: 1.3rem; }
+  .about-container { margin-top: -50px; }
+  .footer-icon { font-size: 1.8rem; margin-right: 25px; }
+  .about-img img { height: 350px; left: 260px; }
+  .margin-auto { left: 42%; }
+  .process-title { font-size: 3rem; }
+  .process-subtitle { margin: auto 50px; }
+  .process-container { width: 90vw; margin: auto; margin-left: 7vw; }
+  .col-sm-12 { flex: 0 0 33.333333% !important; max-width: 33.333333% !important; }
+  .footer-container { width: 97%; left: 0; }
+  .footer-icon { font-size: 1.7rem; margin-right: 22px; }
+  .footer-title { font-size: 1.3rem; }
+  .footer-text { font-size: .7rem; }
 }
 
 /* iPhone X */

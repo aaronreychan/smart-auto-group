@@ -104,6 +104,20 @@
   .button { margin-bottom: 30px; margin-top: 0; }
 }
 
+/* Large Smartphone - Horizontal */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .container { max-width: 775px; }
+  .button-title-group { margin-bottom: 0; }
+  .margin-bottom { margin-bottom: 35px; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 815px) and (max-height: 376px) {
+  .margin-bottom { margin-bottom: 35px; }
+  .page-title { font-size: 2rem; }
+  .card-text { font-size: .95rem; }
+}
+
 /* iPhone */
 @media screen and (max-width: 376px) {
   .margin-bottom { margin-bottom: 130px; margin-top: 0; }

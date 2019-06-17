@@ -1,0 +1,31 @@
+[debug] [2019-06-17T03:03:08.882Z] ----------------------------------------------------------------------
+[debug] [2019-06-17T03:03:08.884Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kingo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-06-17T03:03:08.885Z] CLI Version:   6.7.1
+[debug] [2019-06-17T03:03:08.885Z] Platform:      win32
+[debug] [2019-06-17T03:03:08.885Z] Node Version:  v8.9.4
+[debug] [2019-06-17T03:03:08.885Z] Time:          Sun Jun 16 2019 23:03:08 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-06-17T03:03:08.885Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-17T03:03:08.904Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-17T03:03:08.905Z] > authorizing via signed-in user
+[debug] [2019-06-17T03:03:08.905Z] [iam] checking project smart-auto-group for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-06-17T03:03:08.908Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/smart-auto-group:testIamPermissions  
+
+[debug] [2019-06-17T03:03:09.240Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-17T03:03:09.247Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/smart-auto-group  
+ 
+[debug] [2019-06-17T03:03:09.413Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'smart-auto-group'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-06-17T03:03:09.423Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/smart-auto-group/versions  
+
+[debug] [2019-06-17T03:03:09.911Z] <<< HTTP RESPONSE 200
+[info] i  hosting[smart-auto-group]: beginning deploy...
+[info] i  hosting[smart-auto-group]: found 67 files in dist/smart-auto-group
+[debug] [2019-06-17T03:03:09.962Z] [hosting] hash cache [ZGlzdFxzbWFydC1hdXRvLWdyb3Vw] load error: lines is not defined
+[debug] [2019-06-17T03:03:10.256Z] [hosting] hash cache [ZGlzdFxzbWFydC1hdXRvLWdyb3Vw] stored for 67 files
+[debug] [2019-06-17T03:03:10.256Z] [hosting][hash queue][FINAL]
+[debug] [2019-06-17T03:03:10.257Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/smart-auto-group/versions/75684a4efd1e38da:populateFiles  
+ <request body omitted>

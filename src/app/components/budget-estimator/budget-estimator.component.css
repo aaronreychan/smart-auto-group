@@ -191,6 +191,21 @@
   .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
 }
 
+/* Large Smartphone - Horizontal */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .calc-title { font-size: 1.3rem; margin-bottom: 25px; }
+  .extra-padding { padding: .5rem .6rem; }
+  .calc-subtitle { font-size: 1.6rem; }
+  .small-text { font-size: .9rem; margin: auto 25px; margin-bottom: 50px; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 815px) and (max-height: 376px) {
+  .page-title { font-size: 2rem; }
+  .btn-group { left: 20%; }
+  .left-calc { padding-right: 0 !important; }
+}
+
 /* iPhone X */
 @media screen and (max-width: 376px) {
   .calc-title { font-size: 1.3rem; }

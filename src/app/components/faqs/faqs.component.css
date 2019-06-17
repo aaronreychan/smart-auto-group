@@ -195,6 +195,24 @@
   .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
 }
 
+/* Large Smartphone - Horizontal */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .section-title { font-size: 1.8rem; }
+  .card-sm { width: 29%; }
+  .card-sm-text { min-height: 200px; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 815px) and (max-height: 376px) {
+  .page-title { font-size: 2rem; }
+  .section-title { font-size: 1.5rem; }
+  .question-title { font-size: 1.3rem; }
+  .question { font-size: 1.1rem; }
+  .answer { font-size: 1rem; }
+  .cards-container { flex-direction: row; }
+  .margin-auto { margin-bottom: 0; }
+}
+
 /* iPhone */
 @media screen and (max-width: 376px) {
   .page-title { font-size: 2rem; margin: auto 30px; }

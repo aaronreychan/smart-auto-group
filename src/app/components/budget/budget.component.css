@@ -240,6 +240,10 @@ input[type=radio] {
   right: 100px; 
 }
 
+/* ------------------------------------------ */
+.desktop { display: initial; }
+.mobile { display: none; }
+
 /* Media Queries */
 
 /* Laptop */
@@ -303,6 +307,21 @@ input[type=radio] {
   .logo-img { height: 50px; }
   .position-left { position: relative; top: -30px; left: unset; }
   .position-right { position: relative; top: -30px; left: 1px; }
+}
+
+/* Large Smartphone - Horizontal */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .desktop { display: none; }
+  .mobile { display: initial; }
+  .logo-container { display: none; }
+
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 815px) and (max-height: 376px) {
+  .margin-auto { margin-bottom: 35px; }
+  .budget-title { font-size: 1.8rem; }
+  .car-select-container { width: 120%; position: relative; left: -50px; }
 }
 
 /* iPhone */
