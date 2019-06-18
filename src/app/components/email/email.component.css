@@ -133,8 +133,12 @@ position:absolute;
   margin: auto;
   margin-top: 100px;
 }
+
 .email-title {
   text-transform: uppercase;
+}
+.email-subtitle {
+  font-style: italic;
 }
 .form-container {
   margin-top: 50px;
@@ -142,7 +146,12 @@ position:absolute;
 .input-field {
   width: 250px;
   margin: auto;
+  margin-top: 0;
+  margin-bottom: -10px; 
+}
+.approval-logo {
   margin-top: 15px;
+  margin-bottom: -25px; 
 }
 
 /* Button */
@@ -183,15 +192,41 @@ position:absolute;
 /* Logos */
 .logo-container { display: flex; flex-direction: row; }
 .logo-img { height: 50px; margin-right: 10px; }
-.position-left { position: relative; top: -30px; left: -35px; }
-.position-right { position: relative; top: 15px; left: -35px; }
+.position-left { position: relative; top: -40px; left: -35px; margin-bottom: initial; }
+.position-right { position: relative; top: 25px; left: -35px; margin-top: initial; }
 
 
 /* Media Queries */
 
+/* Desktop */
+@media screen and (min-width: 1801px) {
+  .button { margin-top: 15px; }
+  .email-subtitle { position: relative; top: 10px; }
+  .position-left {top: -40px; margin-bottom: -35px; }
+  .position-right {  top: 25px; margin-top: -25px; }
+  .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: -30px;
+  }
+}
+
 /* Laptop */
 @media screen and (max-width: 1800px) {
   .email-container { margin-top: 50px; }
+  .button { margin-top: 15px; }
+  .email-subtitle { position: relative; top: 10px; }
+  .position-left {top: -40px; margin-bottom: -35px; }
+  .position-right {  top: 25px; margin-top: -25px; }
+  .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: -30px;
+  }
 }
 
 /* Smaller Laptop */
@@ -204,24 +239,30 @@ position:absolute;
 
 /* iPad - Horizontal */
 @media screen and (min-width: 900px) and (max-width: 1025px) {
-
+  .email-container { margin-top: 25px; }
+  .button { margin-top: 15px; }
 }
 
 /* iPad */
 @media screen and (min-width: 601px) and (max-width: 769px) {
   .email-container { margin-top: 100px; }
+  .button { margin-top: 15px; }
 }
 
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
-  .email-container { width: 100%; padding: 10px; }
+  .email-container { width: 100%; padding: 10px; margin-top: 25px; }
   .email-group { position: relative; top: 15px; }
+  .approval-logo { margin-top: 10px; margin-bottom: -15px; }
   .logo-img { height: 40px; }
+  .button { margin-top: 15px; }
 }
 
 /* Large Smartphone - Horizontal */
 @media screen and (max-width: 850px) and (max-height: 500px) {
-  .email-container { margin-bottom: 50px; }
+  .email-container { margin-bottom: 50px; margin-top: 25px; }
+  .steps-section { margin-top: 0; }
+  .button { margin-top: 15px; }
 }
 
 /* iPhone X - Horizontal*/
@@ -231,5 +272,6 @@ position:absolute;
 
 /* iPhone */
 @media screen and (max-width: 376px) {
+  .steps-section { margin-top: 0; }
   .logo-img { height: 35px; }
 }
