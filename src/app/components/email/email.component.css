@@ -13,7 +13,7 @@
   background-size: cover;
 }
 
-/** STEPS START*/
+/* Steps Section */
 em, i {
   font-style: italic;
 }
@@ -118,7 +118,7 @@ position:absolute;
   color: #3c763d;
 }
 
-/** STEPS END*/
+/* End Steps Section */
 
 /* Email */
 .email-container {
@@ -133,7 +133,6 @@ position:absolute;
   margin: auto;
   margin-top: 100px;
 }
-
 .email-title {
   text-transform: uppercase;
 }
@@ -198,11 +197,11 @@ position:absolute;
 
 /* Media Queries */
 
-/* Desktop */
+/* Desktop Monitor */
 @media screen and (min-width: 1801px) {
   .button { margin-top: 15px; }
   .email-subtitle { position: relative; top: 10px; }
-  .position-left {top: -40px; margin-bottom: -35px; }
+  .position-left { top: -40px; margin-bottom: -35px; }
   .position-right {  top: 25px; margin-top: -25px; }
   .left {
     display: flex;
@@ -215,26 +214,20 @@ position:absolute;
 
 /* Laptop */
 @media screen and (max-width: 1800px) {
-  .email-container { margin-top: 50px; }
+  .email-container { margin-top: 25px; }
   .button { margin-top: 15px; }
-  .email-subtitle { position: relative; top: 10px; }
-  .position-left {top: -40px; margin-bottom: -35px; }
+  .email-subtitle { top: unset; }
+  .position-left { top: -40px; margin-bottom: -35px; }
   .position-right {  top: 25px; margin-top: -25px; }
-  .left {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 400px;
-    margin-left: -30px;
-  }
 }
 
 /* Smaller Laptop */
 @media screen and (max-width: 1265px) {
-  .email-container { width: 465px; padding: 10px; }
+  .email-container { width: 465px; padding: 10px; margin-top: 15px; }
+  .steps-section { margin-top: 0; }
   .logo-container { justify-content: center; }
-  .position-left { top: unset; left: unset; }
-  .position-right { top: unset; left: unset; }
+  .position-left { top: unset; left: unset; margin-bottom: 0; }
+  .position-right { top: unset; left: unset; margin-top: 0; }
 }
 
 /* iPad - Horizontal */
