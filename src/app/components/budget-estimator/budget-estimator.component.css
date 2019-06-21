@@ -51,6 +51,32 @@
   padding: .5rem 1.72rem;
 }
 
+/* Custom Select */
+.select-container {
+  text-align: center;
+  position: relative;
+  top: 45px;
+  left: 15px;
+}
+select {
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-x: 244px;
+}
+.custom-select {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(240, 240, 240);
+  line-height: 1.3;
+  height: auto;
+  font-size: 3rem; 
+}
+option {
+  font-size: 1.2rem; 
+}
+.custom-select:focus {
+  box-shadow: none;
+}
+
 /* Right Calc */
 .right-calc {
   background-color: rgb(240, 240, 240);
@@ -177,6 +203,7 @@
   .right-calc { margin: 25px 15px; }
   .small-text { margin: auto 25px; margin-bottom: 50px; font-size: .8rem; }
   .budget-text { font-size: 1rem; margin: auto 2.5px; }
+  .budget-estimator { margin-bottom: 85px; }
   .action-button-container { 
     height: 60px; 
     width: 100%; 
