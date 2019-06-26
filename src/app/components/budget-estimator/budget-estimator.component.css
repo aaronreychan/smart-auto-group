@@ -62,6 +62,7 @@ select {
   background: url(../../../assets/img/down-arrow.png) no-repeat right #ddd;
   -webkit-appearance: none;
   background-position-x: 244px;
+  cursor: pointer;
 }
 .custom-select {
   background-color: rgb(240, 240, 240);
