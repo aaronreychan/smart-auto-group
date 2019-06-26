@@ -59,7 +59,7 @@
   left: 15px;
 }
 select {
-  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  background: url(../../../assets/img/down-arrow.png) no-repeat right #ddd;
   -webkit-appearance: none;
   background-position-x: 244px;
 }
