@@ -18,6 +18,7 @@ import { InventoryComponent } from './components/inventory/inventory.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { MyCookieService } from './services/cookieService';
+import { TeamComponent } from './components/team/team.component';
 
 
 const appRoutes: Routes = [
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'budget-estimator', component: BudgetEstimatorComponent },
   { path: 'inventory', component: InventoryComponent },
+  { path: 'team', component: TeamComponent },
   { path: 'faqs', component: FaqsComponent },
   { path: 'reviews', component: ReviewsComponent },
   { path: 'budget', component: BudgetComponent },
@@ -43,6 +45,7 @@ const appRoutes: Routes = [
     InventoryComponent,
     FaqsComponent,
     ReviewsComponent,
+    TeamComponent,
   ],
   imports: [
     RouterModule.forRoot(

@@ -1,0 +1,188 @@
+.team-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+  font-size: 1.2rem;
+  padding-top: 80px;
+}
+
+/* Title */
+.page-title-container {
+  height: 180px;
+  width: 100%;
+  background-color: #166CBF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+}
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+/* Custom Card */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px; 
+}
+.custom-card {
+  width: 47.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-left {
+  margin-right: 2.5vw;
+}
+.card-right {
+  justify-content: space-between;
+  margin-left: 2.5vw;
+  margin-right: 0;
+}
+.team-img {
+  width: 333px;
+}
+p {
+  text-align: justify;
+}
+.team-title-left {
+  position: relative;
+  left: 25px; 
+  margin-bottom: 25px;
+}
+.team-text-left {
+  position: relative;
+  left: 25px;
+}
+.team-title-right {
+  position: relative;
+  right: 25px; 
+  margin-bottom: 25px;
+}
+.team-text-right {
+  position: relative;
+  right: 25px;
+}
+.blue-container {
+  background-color: #166CBF;
+  width: 50vw;
+  margin-bottom: 25px;
+}
+.custom-text {
+  color: white;
+  font-size: 1.6rem;
+  font-style: italic;
+  padding: 50px; 
+}
+
+/* ------------------------------------ */
+.show-desktop { display: inherit; }
+.show-mobile { display: none; }
+.action-button-container { display: none; }
+
+/* Media Queries */
+
+/* Laptop */
+@media screen and (max-width: 1800px) {
+  .team-wrapper { padding-top: 50px; }
+  .page-title-container { height: 120px; }
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1576px) {
+  .team-img { width: 250px; }
+  h4 { font-size: 1.3rem; }
+  p { font-size: 1rem; }
+  .card-left { margin-right: 3.5vw; }
+  .card-right { margin-left: 3.5vw; }
+  .custom-text { font-size: 1.4rem; }
+}
+
+/* iPad - Horizontal */
+@media screen and (min-width: 900px) and (max-width: 1025px) {
+  .card-container { flex-direction: column; margin-left: 20vw; }
+  .custom-card { width: 60vw; }
+  .collapsed { padding-top: 10px; padding-bottom: 10px; border-bottom: dashed 2px black; }
+  .less-padding { padding-top: 0; }
+  .even-less-padding { margin-top: -25px; }
+  .blue-container { margin-top: 25px; }
+}
+
+/* iPad */
+@media screen and (min-width: 601px) and (max-width: 769px) {
+  .card-container { flex-direction: column; margin-left: 7.5vw; }
+  .custom-card { width: 80vw; }
+  .collapsed { padding-top: 10px; padding-bottom: 10px; border-bottom: dashed 2px black; }
+  .less-padding { padding-top: 0; }
+  .even-less-padding { margin-top: -25px; }
+  .blue-container { margin-top: 25px; }
+}
+
+/* Large Smartphone */
+@media screen and (max-width: 600px) {
+  .team-wrapper { padding-top: 50px; }
+  .show-desktop { display: none; }
+  .show-mobile { display: inherit; }
+  .page-title { font-size: 2.2rem; text-align: center; margin: auto 50px; }
+  .card-container { flex-direction: column; justify-content: center; }
+  .custom-card { width: 85vw; flex-direction: column; }
+  .collapsed { padding-top: 10px; padding-bottom: 10px; }
+  .less-padding { padding-top: 0; }
+  .even-less-padding { margin-top: -25px; }
+  .card-left { margin-right: unset; }
+  .card-right { margin-left: unset; margin-right: unset; }
+  .team-title-left { margin-bottom: 15px; }
+  .team-title-right { right: unset; left: 25px; }
+  .team-text-right { right: unset; left: 25px; }
+  .picture-top { flex-direction: column-reverse; }
+  .team-img { width: 100%; margin-bottom: 15px; }
+  .blue-container { margin-top: 15px; margin-bottom: 95px; }
+  .custom-text { font-size: 1.1rem; }
+  .action-button-container { 
+    height: 60px; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    background-color: white; 
+    z-index: 30; 
+    display: inherit;
+    border-top: 2.5px solid black;
+  }
+  .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
+}
+
+/* Large Smartphone - Horizontal */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .card-container { flex-direction: column; margin-left: 7.5vw; }
+  .custom-card { width: 80vw; }
+  .collapsed { padding-top: 10px; padding-bottom: 10px; border-bottom: dashed 2px black; }
+  .less-padding { padding-top: 0; }
+  .even-less-padding { margin-top: -25px; }
+  .blue-container { margin-top: 25px; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 815px) and (max-height: 376px) {
+  .page-title { font-size: 2rem; }
+  .show-desktop { display: none; }
+  .show-mobile { display: inherit; }
+  .custom-text { font-size: 1.3rem; }
+}
+
+/* iPhone */
+@media screen and (max-width: 376px) {
+  .blue-container { margin-bottom: 170px; }
+}
