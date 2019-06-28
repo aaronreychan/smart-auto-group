@@ -4,23 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. I use `ng serve -o` to automatically launch the browser to the right page.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. I also add a build optimizer. So, my first step to build any new version is `ng build --prod --build-optimizer`
 
-## Running unit tests
+## Firebase Setup
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you're starting from scratch and have never used Firebase, make sure to install the tools globally. `npm install -g firebase tools`. You would then need to log in with `firebase login`, you'll be prompted to enter your password the first time. For each new project you need to create in the Firebase console first, then type `firebase init` and select hosting. The public directory needs to be specified as 'dist/THE_NAME_OF_THE_PROJECT' and also do not overwrite index.html. 
 
-## Running end-to-end tests
+## Firebase Deploy
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+After building a production optimized version, the second and final step is to run `firebase deploy`. This two step process will need to be repeated with update to the website. 
 
 ## Further help
 
