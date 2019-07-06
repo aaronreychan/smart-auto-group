@@ -1,3 +1,15 @@
+# Setup
+
+Install nodejs https://nodejs.org/en/download/
+Add to environment variables C:\Program Files\nodejs\
+open Command Prompt
+Install Angular CLI 'npm install -g @angular/cli'
+
+Using Visual Studio Code
+Open Terminal
+Install npm dependencies by running command 'npm install'
+
+
 # SmartAutoGroup
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
