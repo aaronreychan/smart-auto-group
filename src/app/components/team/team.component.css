@@ -74,7 +74,9 @@ p {
   font-style: italic;
   padding: 50px; 
 }
-
+.default-img {
+  opacity: 0.25;
+}
 /* ------------------------------------ */
 .show-desktop { display: inherit; }
 .show-mobile { display: none; }
