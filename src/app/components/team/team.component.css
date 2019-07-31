@@ -12,17 +12,19 @@
 
 /* Title */
 .page-title-container {
-  height: 180px;
   width: 100%;
   background-color: #166CBF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding: 10px 70px;
 }
 .page-title {
   text-transform: uppercase;
   color: white;
   font-size: 3rem;
+}
+.page-subtitle {
+  color: white;
+  font-size: 1rem;
 }
 .section-title {
   text-align: center;
@@ -87,7 +89,6 @@ p {
 /* Laptop */
 @media screen and (max-width: 1800px) {
   .team-wrapper { padding-top: 50px; }
-  .page-title-container { height: 120px; }
 }
 
 /* Smaller Laptop */
@@ -102,16 +103,21 @@ p {
 
 /* iPad - Horizontal */
 @media screen and (min-width: 900px) and (max-width: 1025px) {
-  .card-container { flex-direction: column; margin-left: 20vw; }
-  .custom-card { width: 60vw; }
+  .card-container { flex-direction: column; margin-left: 7.5vw; }
+  .custom-card { width: 80vw; }
   .collapsed { padding-top: 10px; padding-bottom: 10px; border-bottom: dashed 2px black; }
   .less-padding { padding-top: 0; }
   .even-less-padding { margin-top: -25px; }
   .blue-container { margin-top: 25px; }
 }
+@media screen and (max-width: 900px) {
+  .page-title-container {
+    padding: 10px 40px;
+  }
+}
 
 /* iPad */
-@media screen and (min-width: 601px) and (max-width: 769px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
   .card-container { flex-direction: column; margin-left: 7.5vw; }
   .custom-card { width: 80vw; }
   .collapsed { padding-top: 10px; padding-bottom: 10px; border-bottom: dashed 2px black; }
