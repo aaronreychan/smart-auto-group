@@ -1,270 +1,426 @@
 .email-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 70px; 
-  overflow-y: auto;
-  background-color: rgb(250, 250, 250);
-  background-image: url("../../../assets/img/car-interior.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    background-color: rgb(250, 250, 250);
+    background-image: url("../../../assets/img/car-interior.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.success {
+    color: green;
+    min-height: 25px;
+    font-size: 14px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.invalid {
+    color: red;
+    min-height: 25px;
+    font-size: 12px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 /* Steps Section */
 em, i {
-  font-style: italic;
+    font-style: italic;
 }
 
 .steps-section {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 10%;
-  margin-top:20px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10%;
+    margin-top: 20px;
 }
+
 .steps-timeline {
-  border-top: 5px solid #ccc;
-  margin: 20px 10%;
-  outline: 1px dashed rgba(255, 0, 0, 0);
-  position: relative;
-  padding-top: 21px;  
+    border-top: 5px solid #ccc;
+    margin: 20px 10%;
+    outline: 1px dashed rgba(255, 0, 0, 0);
+    position: relative;
+    padding-top: 21px;
 }
 
 .steps-timeline.extraBottomMargin {
-  margin-bottom:29px;
+    margin-bottom: 29px;
 }
+
 .completed-steps {
-  height: 5px;
-  width: 0%;
-  background-color: #37b601;
-  position: absolute;
-  top: -5px;
-  left: 8px;
-  -webkit-transition: width 1s ease-in-out;
-  -moz-transition: width 1s ease-in-out;
-  -o-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
+    height: 5px;
+    width: 0%;
+    background-color: #37b601;
+    position: absolute;
+    top: -5px;
+    left: 8px;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 
 @keyframes tease-step-three {
-0% {
-  width: 65%;
-}
-50% {
-  width:92%
-}
-100% {
-  width: 65%;
-}
+    0% {
+        width: 65%;
+    }
+    50% {
+        width: 92%
+    }
+    100% {
+        width: 65%;
+    }
 }
 
 .step-three-animation {
-  animation: tease-step-three 6s infinite;
+    animation: tease-step-three 6s infinite;
 }
+
 .steps-one, .steps-two {
-  outline: 1px dashed rgba(0, 128, 0, 0);
-  width: 40%;
-  margin-top: -49px;
+    outline: 1px dashed rgba(0, 128, 0, 0);
+    width: 40%;
+    margin-top: -49px;
 }
-.steps-one{
-  left: -20%;
-position:absolute;
+
+.steps-one {
+    left: -20%;
+    position: absolute;
 }
-.steps-two{
-  right: -20%;
-  position: absolute;
+
+.steps-two {
+    right: -20%;
+    position: absolute;
 }
+
 .steps-img {
-  display: block;
-  margin: auto;
-  width: 50px;
-  height: 50px;
-  padding: 15px;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .steps-description {
-  font-family: Arial, Helvetica, sans-serif;
-  font-stretch: extra-expanded;
-  -webkit-font-stretch: extra-expanded;
-  -moz-font-stretch: extra-expanded;
-  -ms-font-stretch: extra-expanded;
-  -o-font-stretch: extra-expanded;
-  font-size: 9px;
-  font-weight: 600;
-  text-align: center;
-  margin: -8px 0 0 0;
-  overflow: hidden;
-  letter-spacing:0.0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-expanded;
+    -webkit-font-stretch: extra-expanded;
+    -moz-font-stretch: extra-expanded;
+    -ms-font-stretch: extra-expanded;
+    -o-font-stretch: extra-expanded;
+    font-size: 9px;
+    font-weight: 600;
+    text-align: center;
+    margin: -8px 0 0 0;
+    overflow: hidden;
+    letter-spacing: 0.0px;
 }
 
 .steps-description .confirmed {
-  color: #37b601;
+    color: #37b601;
 }
 
 .steps-description .pending {
-  color: #cb4222;
+    color: #cb4222;
 }
 
-
 .has-success .checkbox, .has-success .checkbox-inline, .has-success .control-label, .has-success .help-block, .has-success .radio, .has-success .radio-inline, .has-success.checkbox label, .has-success.checkbox-inline label, .has-success.radio label, .has-success.radio-inline label {
-  color: #3c763d;
+    color: #3c763d;
 }
 
 /* End Steps Section */
 
 /* Email */
 .email-container {
-  text-align: center;
-  background-color: rgb(243, 243, 243);
-  border-radius: 5px;
-  border: 1px solid rgb(172, 172, 172);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
-  width: 40%;
-  padding: 50px;
-  padding-bottom: 35px;
-  margin: auto;
-  margin-top: 100px;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    border: 1px solid rgb(172, 172, 172);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    width: 40%;
+    padding: 50px;
+    padding-bottom: 35px;
+    margin: auto;
+    margin-top: 100px;
 }
+
 .email-title {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 .email-subtitle {
-  font-style: italic;
+    font-style: italic;
 }
+
 .form-container {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
 .input-field {
-  width: 250px;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: -10px; 
+    width: 250px;
+    margin: auto;
+    margin-top: 0;
 }
+
 .approval-logo {
-  margin-top: 15px;
-  margin-bottom: -25px; 
+    margin-top: 15px;
+    margin-bottom: -25px;
 }
 
 /* Button */
-.button { 
-  background-color: rgb(27, 76, 255);
-  border: none;
-  color: white;
-  padding: 10px 20px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin: 10px auto;
-  margin-right: 15px; 
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 4px rgb(105, 105, 105);
+.button {
+    background-color: rgb(27, 76, 255);
+    border: none;
+    color: white;
+    padding: 10px 20px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 10px auto 0;
+    margin-right: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px rgb(105, 105, 105);
 }
-.button:hover {
-  color: black;
-  background-color: #f1592a;
+
+.button:hover:not([disabled]) {
+    color: black;
+    background-color: #f1592a;
 }
+
 .button:active {
-  box-shadow: 0 2px #666;
-  background-color: #f1592a;
-  transform: translateY(2px);
+    box-shadow: 0 2px #666;
+    background-color: #f1592a;
+    transform: translateY(2px);
 }
+
+.button:disabled {
+    background-color: rgba(105, 105, 105, 0.7);
+}
+
 .margin-auto {
-  position: relative;
-  top: -15px;
-  left: 10px;
-  background-color: #37b601;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    background-color: #37b601;
+}
+
+.spinner {
+    margin-right: 7px;
+    margin-left: -7px;
+    vertical-align: middle;
 }
 
 /* Logos */
-.logo-container { display: flex; flex-direction: row; }
-.logo-img { height: 50px; margin-right: 10px; }
-.position-left { position: relative; top: -40px; left: -35px; margin-bottom: initial; }
-.position-right { position: relative; top: 25px; left: -35px; margin-top: initial; }
+.logo-container {
+    display: flex;
+    flex-direction: row;
+}
 
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.position-left {
+    position: relative;
+    top: -40px;
+    left: -35px;
+    margin-bottom: initial;
+}
+
+.position-right {
+    position: relative;
+    top: 25px;
+    left: -35px;
+    margin-top: 10px;
+}
 
 /* Media Queries */
 
 /* Desktop Monitor */
 @media screen and (min-width: 1801px) {
-  .button { margin-top: 15px; }
-  .email-subtitle { position: relative; top: 10px; }
-  .position-left { top: -40px; margin-bottom: -35px; }
-  .position-right {  top: 25px; margin-top: -25px; }
-  .left {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 400px;
-    margin-left: -30px;
-  }
+    .button {
+        margin-top: 25px;
+    }
+
+    .email-subtitle {
+        position: relative;
+        top: 10px;
+    }
+
+    .position-left {
+        top: -40px;
+        margin-bottom: -35px;
+    }
+
+    .position-right {
+        top: 25px;
+        margin-top: -15px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 400px;
+        margin-left: -30px;
+    }
 }
 
 /* Laptop */
 @media screen and (max-width: 1800px) {
-  .email-container { margin-top: 25px; }
-  .button { margin-top: 15px; }
-  .email-subtitle { top: unset; }
-  .position-left { top: -40px; margin-bottom: -35px; }
-  .position-right {  top: 25px; margin-top: -25px; }
+    .email-container {
+        margin-top: 25px;
+    }
+
+    .button {
+        margin-top: 25px;
+    }
+
+    .email-subtitle {
+        top: unset;
+    }
+
+    .position-left {
+        top: -40px;
+        margin-bottom: -35px;
+    }
+
+    .position-right {
+        top: 25px;
+        margin-top: -15px;
+    }
 }
 
 /* Smaller Laptop */
 @media screen and (max-width: 1265px) {
-  .email-container { width: 465px; padding: 10px; margin-top: 15px; }
-  .steps-section { margin-top: 0; }
-  .logo-container { justify-content: center; }
-  .position-left { top: unset; left: unset; margin-bottom: 0; }
-  .position-right { top: unset; left: unset; margin-top: 0; }
+    .email-container {
+        width: 465px;
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .steps-section {
+        margin-top: 0;
+    }
+
+    .logo-container {
+        justify-content: center;
+    }
+
+    .position-left {
+        top: unset;
+        left: unset;
+        margin-bottom: 0;
+    }
+
+    .position-right {
+        top: unset;
+        left: unset;
+        margin-top: 10px;
+    }
 }
 
 /* iPad - Horizontal */
 @media screen and (min-width: 900px) and (max-width: 1025px) {
-  .email-container { margin-top: 25px; }
-  .button { margin-top: 15px; }
+    .email-container {
+        margin-top: 25px;
+    }
+
+    .button {
+        margin-top: 25px;
+    }
 }
 
 /* iPad */
 @media screen and (min-width: 601px) and (max-width: 769px) {
-  .email-container { margin-top: 100px; }
-  .button { margin-top: 15px; }
+    .email-container {
+        margin-top: 100px;
+    }
+
+    .button {
+        margin-top: 25px;
+    }
 }
 
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
-  .email-container { width: 100%; padding: 10px; margin-top: 25px; }
-  .email-group { position: relative; top: 15px; }
-  .approval-logo { margin-top: 10px; margin-bottom: -15px; }
-  .logo-img { height: 40px; }
-  .button { margin-top: 15px; }
+    .email-container {
+        width: 100%;
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .email-group {
+        position: relative;
+        top: 15px;
+    }
+
+    .approval-logo {
+        margin-top: 10px;
+        margin-bottom: -15px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .button {
+        margin-top: 15px;
+    }
 }
 
 /* Large Smartphone - Horizontal */
 @media screen and (max-width: 850px) and (max-height: 500px) {
-  .email-container { margin-bottom: 50px; margin-top: 25px; }
-  .steps-section { margin-top: 0; }
-  .button { margin-top: 15px; }
+    .email-container {
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .steps-section {
+        margin-top: 0;
+    }
+
+    .button {
+        margin-top: 25px;
+    }
 }
 
 /* iPhone X - Horizontal*/
 @media screen and (max-width: 815px) and (max-height: 376px) {
-  .email-container { margin-bottom: 60px; margin-top: 35px; }
+    .email-container {
+        margin-bottom: 60px;
+        margin-top: 35px;
+    }
 }
 
 /* iPhone */
 @media screen and (max-width: 376px) {
-  .steps-section { margin-top: 0; }
-  .logo-img { height: 35px; }
+    .steps-section {
+        margin-top: 0;
+    }
+
+    .logo-img {
+        height: 35px;
+    }
 }

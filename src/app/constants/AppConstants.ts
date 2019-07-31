@@ -1,4 +1,4 @@
 export class AppConstants {
-    static cookieCarType = "CarType";
-    static cookieBudget = "Budget"; 
+    static cookieCarType = 'CarType';
+    static cookieBudget = 'Budget';
 }

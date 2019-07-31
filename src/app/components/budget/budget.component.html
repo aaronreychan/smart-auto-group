@@ -20,6 +20,7 @@
     <div class="clearFix"></div>
   </div>
 
+
   <!-- Budget Slider -->
   <div class="budget-slider-container">
     <h2 class="budget-title">Select Your Vehicle Monthly Budget</h2>
@@ -30,177 +31,20 @@
   <!-- Car Select -->
   <div class="car-select-container">
     <h2 class="car-title">Select Vehicle Type</h2>
-    <!-- Desktop Car Select -->
-    <div class="car-select-group container show-desktop">
-      <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-1.png" alt="4-Door Sedan">
+    <div class="car-select-group">
+        <div class="card" *ngFor="let car of allCar; let i = index">
+          <img class="card-img-top" src="../../../assets/img/{{car.img}}" alt="4-Door Sedan">
           <div class="card-body">
-            <h5 class="card-title">4-Door Sedan</h5>
+            <h5 class="card-title" [ngClass]="{'desktop': car.mobileName}">{{car.type}}</h5>
+            <h5 class="card-title" [ngClass]="{'mobile': car.mobileName}">{{car.mobileName}}</h5>
             <p class="card-text"></p>
-            <div class="card-select" (click)="carSelected()">
+            <div class="card-select" (click)="carSelected(i)">
               <label>
-                <input id="car" type="radio" name="car-select">
+                <input id="{{car.name}}" type="radio" name="car-select">
                 <span>Select</span>
               </label>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-2.png" alt="Pickup Truck">
-          <div class="card-body">
-            <h5 class="card-title">Pickup Truck</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="carSelected()">
-              <label>
-                <input id="truck" type="radio" name="car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-3.png" alt="Sport Utility Vehicle">
-          <div class="card-body">
-            <h5 class="card-title desktop">Sport Utility Vehicle</h5>
-            <h5 class="card-title mobile">SUV</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="carSelected()">
-              <label>
-                <input id="suv" type="radio" name="car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-deck" style="margin-top: 20px; ">
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-4.png" alt="Minivan">
-          <div class="card-body">
-            <h5 class="card-title">Minivan</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="carSelected()">
-              <label>
-                <input id="minivan" type="radio" name="car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-5.png" alt="Electric Car">
-          <div class="card-body">
-            <h5 class="card-title">Hybrid/Electric</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="carSelected()">
-              <label>
-                <input id="electric" type="radio" name="car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-6.png" alt="Exotic Car">
-          <div class="card-body">
-            <h5 class="card-title">Exotic</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="carSelected()">
-              <label>
-                <input id="exotic" type="radio" name="car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile Car Select -->
-    <div class="car-select-group container show-mobile">
-      <div class="card-deck">
-        <div class="card" style="margin-right: 10px;">
-          <img class="card-img-top" src="../../../assets/img/car-1.png" alt="4-Door Sedan">
-          <div class="card-body">
-            <h5 class="card-title">4-Door Sedan</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="mobileCarSelected">
-              <label>
-                <input id="car" type="radio" name="mobile-car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-2.png" alt="Pickup Truck">
-          <div class="card-body">
-            <h5 class="card-title">Pickup Truck</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="mobileCarSelected">
-              <label>
-                <input id="truck" type="radio" name="mobile-car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-deck">
-        <div class="card" style="margin-right: 10px;">
-          <img class="card-img-top" src="../../../assets/img/car-3.png" alt="Sport Utility Vehicle">
-          <div class="card-body">
-            <h5 class="card-title">SUV</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="mobileCarSelected">
-              <label>
-                <input id="suv" type="radio" name="mobile-car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-4.png" alt="Minivan">
-          <div class="card-body">
-            <h5 class="card-title">Minivan</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="mobileCarSelected">
-              <label>
-                <input id="minivan" type="radio" name="mobile-car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-deck">
-        <div class="card" style="margin-right: 10px;">
-          <img class="card-img-top" src="../../../assets/img/car-5.png" alt="Electric Car">
-          <div class="card-body">
-            <h5 class="card-title">Hybrid/Electric</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="mobileCarSelected">
-              <label>
-                <input id="electric" type="radio" name="mobile-car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../../assets/img/car-6.png" alt="Exotic Car">
-          <div class="card-body">
-            <h5 class="card-title">Exotic</h5>
-            <p class="card-text"></p>
-            <div class="card-select" (click)="mobileCarSelected">
-              <label>
-                <input id="exotic" type="radio" name="mobile-car-select">
-                <span>Select</span>
-              </label>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   <!-- End Car Select -->
@@ -227,7 +71,9 @@
   </div>
 
   <!-- Button -->
-  <a routerLink="/email" routerLinkActive="active"><button class="button margin-auto">Continue</button></a>
-  
+    <div class="text-center">
+      <a class="button continue-btn" routerLink="/email" routerLinkActive="active" (click)="addValueToCookie()">Continue</a>
+    </div>
 <!-- End Wrapper -->
+</div>
 </div>

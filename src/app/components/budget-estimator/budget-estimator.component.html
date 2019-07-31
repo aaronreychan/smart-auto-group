@@ -1,5 +1,4 @@
 <div class="budget-estimate-wrapper">
-
   <div class="page-title-container">
     <h1 class="page-title">Plan Your Budget</h1>
   </div>
@@ -10,32 +9,46 @@
       <div class="col-md-6 col-sm-12 left-calc">
         <h2 class="calc-title">Tell Us About Your Credit Rating</h2>
         <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary extra-padding">Poor</button> <!--data-credit-type="poor" data-selected="true"-->
-          <button type="button" class="btn btn-secondary extra-padding">Average</button>
-          <button type="button" class="btn btn-secondary extra-padding">Good</button>
-          <button type="button" class="btn btn-secondary extra-padding">Excellent</button>
+          <button  type="button" *ngFor="let item of creditTypes; let i = index"
+                   class="btn btn-secondary extra-padding"
+                   (mouseover)="creditDescription = item.text"
+                   (mouseleave)="creditDescription = state.rating.text"
+                   (click)="onChangeCreditType(item)"
+                   [class.active]="state.rating === item">{{item.label}}</button>
         </div>
-        <h3 class="calc-subtitle extra-margin">Amount ($5000 - $75000)</h3>
-        <input type="text" class="js-range-slider-1 slider" name="my_range" value="" />
-        <h3 class="calc-subtitle extra-margin">Months (12 - 96)</h3>
-        <input type="text" class="js-range-slider-2 slider" name="my_range" value="" />
-        <p class="calc-text-left">Our Online Pre-Approval Process is Fast, Easy and Very Convenient. No Hassles. Apply from the comfort of your home via any smartphone!</p>
+        <h3 class="calc-subtitle extra-margin">Amount (${{SETTINGS.AMOUNT_MIN}} - ${{SETTINGS.AMOUNT_MAX}})</h3>
+        <ion-range-slider [min]="SETTINGS.AMOUNT_MIN"
+                          [max]="SETTINGS.AMOUNT_MAX"
+                          [from]="SETTINGS.AMOUNT_DEFAULT"
+                          [step]="SETTINGS.AMOUNT_STEP"
+                          [grid]="true"
+                          grid_num="4"
+                          (onChange)="onAmountChange($event)"></ion-range-slider>
+
+        <h3 class="calc-subtitle extra-margin">Months ({{SETTINGS.MONTH_MIN}} - {{SETTINGS.MONTH_MAX}})</h3>
+        <ion-range-slider [min]="SETTINGS.MONTH_MIN"
+                          [max]="SETTINGS.MONTH_MAX"
+                          [from]="SETTINGS.MONTH_DEFAULT"
+                          [step]="SETTINGS.MONTH_STEP"
+                          [grid]="true"
+                          grid_num="7"
+                          (onChange)="onMonthChange($event)"></ion-range-slider>
+        <p class="calc-text-left">{{creditDescription}}!</p>
       </div>
       <div class="col-md-6 col-sm-12 right-calc">
         <div class="select-container">
-          <select id="paymentFrequency" class="custom-select" style="width: 275px">
-            <option value="1">Weekly</option>
-            <option value="2" selected>Bi-Weekly</option>
-            <option value="3">Monthly</option>
+          <select id="paymentFrequency" [(ngModel)]="state.schedule" class="custom-select">
+            <option *ngFor="let opt of paymentSchedule"
+                    [value]="opt.value">{{opt.label}}</option>
           </select>
         </div>
-
-
         <div class="calc-total">
-          <h1 class="big-number"><span class="dollar">$</span>200</h1>
+          <h1 class="big-number"><span class="dollar">$</span>{{calculateTotalPayment()}}</h1>
         </div>
         <p class="calc-text">Regardless of your credit standing, we are here to make your search for the best vehicle hassle-free.</p>
-        <button class="button margin-auto">Get Approved Today!</button>
+        <div class="text-center">
+          <a class="button approved-btn" routerLink="/budget" routerLinkActive="active">Get Approved Today!</a>
+        </div>
         <p class="small-text">***This tool will calculate an estimated amount based on the information you give and is intended for general information purposes only. Don’t count on this tool for specific financial guidance of any sort.</p>
       </div>
     </div>

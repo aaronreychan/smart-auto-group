@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   //     var idx = $e.index();
   //     var itemsPerSlide = 1;
   //     var totalItems = $('.carousel-item').length;
-      
+
   //     if (idx >= totalItems-(itemsPerSlide-1)) {
   //         var it = itemsPerSlide - (totalItems - idx);
   //         for (var i=0; i<it; i++) {
@@ -35,6 +35,4 @@ export class HomeComponent implements OnInit {
   //     }
   // });
   }
-
-  
 }

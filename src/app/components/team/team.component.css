@@ -35,45 +35,33 @@
 .card-container {
   display: flex;
   flex-direction: row;
-  margin-top: 25px; 
+  padding: 20px;
 }
 .custom-card {
   width: 47.5vw;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
 }
 .card-left {
-  margin-right: 2.5vw;
+  margin-right: 1.5vw;
 }
 .card-right {
   justify-content: space-between;
-  margin-left: 2.5vw;
+  margin-left: 1.5vw;
   margin-right: 0;
 }
 .team-img {
   width: 333px;
 }
+.team-text-group.left {
+    padding-left: 25px;
+  }
+.team-text-group.right {
+    padding-right: 25px;
+}
 p {
   text-align: justify;
-}
-.team-title-left {
-  position: relative;
-  left: 25px; 
-  margin-bottom: 25px;
-}
-.team-text-left {
-  position: relative;
-  left: 25px;
-}
-.team-title-right {
-  position: relative;
-  right: 25px; 
-  margin-bottom: 25px;
-}
-.team-text-right {
-  position: relative;
-  right: 25px;
 }
 .blue-container {
   background-color: #166CBF;
@@ -143,9 +131,6 @@ p {
   .even-less-padding { margin-top: -25px; }
   .card-left { margin-right: unset; }
   .card-right { margin-left: unset; margin-right: unset; }
-  .team-title-left { margin-bottom: 15px; }
-  .team-title-right { right: unset; left: 25px; }
-  .team-text-right { right: unset; left: 25px; }
   .picture-top { flex-direction: column-reverse; }
   .team-img { width: 100%; margin-bottom: 15px; }
   .blue-container { margin-top: 15px; margin-bottom: 95px; }

@@ -1,60 +1,95 @@
 <div class="email-wrapper">
-  <!-- Steps -->
-  <div class="container">
-    <div id="Steps" class="steps-section">
-      <div class="steps-timeline">
-        <div class="completed-steps step-three-animation"></div>
-          <div class="steps-one">
-            <img class="steps-img" src="https://www.approvalteam.ca/funnel/public/images/timeline-point-1.png" alt="timeline-point-1" />
-            <p class="steps-description">
-              Select Vehicle/Budget
-            </p>
-          </div>
-          <div class="steps-two">
-            <img class="steps-img" src="https://www.approvalteam.ca/funnel/public/images/timeline-point-2.png" alt="timeline-point-2" />
-            <p class="steps-description">
-              Email Me Deals
-            </p>
-          </div>
-      </div>
-  <div class="clearFix"></div>
-  </div>
+    <!-- Steps -->
+    <div class="container">
+        <div id="Steps" class="steps-section">
+            <div class="steps-timeline">
+                <div class="completed-steps step-three-animation"></div>
+                <div class="steps-one">
+                    <img class="steps-img" src="https://www.approvalteam.ca/funnel/public/images/timeline-point-1.png"
+                         alt="timeline-point-1"/>
+                    <p class="steps-description">
+                        Select Vehicle/Budget
+                    </p>
+                </div>
+                <div class="steps-two">
+                    <img class="steps-img" src="https://www.approvalteam.ca/funnel/public/images/timeline-point-2.png"
+                         alt="timeline-point-2"/>
+                    <p class="steps-description">
+                        Email Me Deals
+                    </p>
+                </div>
+            </div>
+            <div class="clearFix"></div>
+        </div>
 
-  <!-- Email -->
-  <div class="email-container">
-    <!-- Manufactuer Logos -->
-    <div class="logo-container position-left">
-      <img src="../../../assets/icons/makes/Audi-1.png" alt="Audi" class="logo-img">
-      <img src="../../../assets/icons/makes/BMW-1.png" alt="BMW" class="logo-img">
-      <img src="../../../assets/icons/makes/MBenz-1.png" alt="Mercedes Benz" class="logo-img">
-      <img src="../../../assets/icons/makes/cadillac-1.png" alt="Cadillac" class="logo-img">
-      <img src="../../../assets/icons/makes/dodge-1.png" alt="Dodge" class="logo-img">
-      <img src="../../../assets/icons/makes/ford-1.png" alt="Ford" class="logo-img">
-      <img src="../../../assets/icons/makes/gmc-1.png" alt="GMC" class="logo-img">
+        <!-- Email -->
+        <div class="email-container">
+            <!-- Manufactuer Logos -->
+            <div class="logo-container position-left">
+                <img src="../../../assets/icons/makes/Audi-1.png" alt="Audi" class="logo-img">
+                <img src="../../../assets/icons/makes/BMW-1.png" alt="BMW" class="logo-img">
+                <img src="../../../assets/icons/makes/MBenz-1.png" alt="Mercedes Benz" class="logo-img">
+                <img src="../../../assets/icons/makes/cadillac-1.png" alt="Cadillac" class="logo-img">
+                <img src="../../../assets/icons/makes/dodge-1.png" alt="Dodge" class="logo-img">
+                <img src="../../../assets/icons/makes/ford-1.png" alt="Ford" class="logo-img">
+                <img src="../../../assets/icons/makes/gmc-1.png" alt="GMC" class="logo-img">
+            </div>
+            <div class="email-group">
+                <div class="left">
+                    <h2 class="email-title">Final Step</h2>
+                    <h6 class="email-subtitle">There are 5+ Deals Near You!</h6>
+                </div>
+                <!-- <div class="right"> -->
+                <img src="../../../assets/img/approved-logo.png" alt="Approval Logo" class="approval-logo">
+                <!-- </div> -->
+            </div>
+            <form method="post" [formGroup]="form" class="container form-container">
+                <input type="text" class="form-control input-field" placeholder="Full Name" required
+                       formControlName="firstAndLastName">
+                <div class="invalid">
+                    <ng-container *ngIf="form.controls['firstAndLastName'].errors?.required && form.controls['firstAndLastName'].dirty">
+                        This field is required
+                    </ng-container>
+                </div>
+                <!--phoneMask-->
+                <input type="tel" appPhoneMask class="form-control input-field" placeholder="(416) 123-4567"
+                       required formControlName="tel">
+                <div class="invalid">
+                    <ng-container *ngIf="form.controls['tel'].errors?.required && form.controls['tel'].dirty">This field is required
+                    </ng-container>
+                </div>
+
+                <input type="email" class="form-control input-field" placeholder="your@email.com" autocomplete="off"
+                       required formControlName="email">
+                <div class="invalid">
+                    <ng-container *ngIf="form.controls['email'].errors?.email && form.controls['email'].dirty">Invalid e-mail address
+                    </ng-container>
+                    <ng-container *ngIf="form.controls['email'].errors?.required && form.controls['email'].dirty">This field is required
+                    </ng-container>
+                </div>
+
+                <div class="success text-center" *ngIf="isShowMsg">
+                    <span class="mx-4">
+                        Your email has been sent!
+                    </span>
+                </div>
+
+                <button type="submit" class="button margin-auto" (click)="send()" [disabled]="form.invalid">
+                     <span *ngIf="isSending" class="m-r-xs spinner spinner-border spinner-border-sm text-light" role="status">
+                        <span class="sr-only"></span>
+                    </span>Get pre-Approved!
+                </button>
+            </form>
+            <div class="logo-container position-right">
+                <img src="../../../assets/icons/makes/honda-1.png" alt="Honda" class="logo-img">
+                <img src="../../../assets/icons/makes/hyundai-1.png" alt="Hyundai" class="logo-img">
+                <img src="../../../assets/icons/makes/jeep-1.png" alt="Jeep" class="logo-img">
+                <img src="../../../assets/icons/makes/mazda-1.png" alt="Mazda" class="logo-img">
+                <img src="../../../assets/icons/makes/ram-1.png" alt="Ram" class="logo-img">
+                <img src="../../../assets/icons/makes/VW-1.png" alt="Volkswagen" class="logo-img">
+                <img src="../../../assets/icons/makes/toyota-1.png" alt="Toyota" class="logo-img">
+            </div>
+        </div>
     </div>
-    <div class="email-group">
-      <div class="left">
-        <h2 class="email-title">Final Step</h2>
-        <h6 class="email-subtitle">There are 5+ Deals Near You!</h6>
-      </div>
-      <!-- <div class="right"> -->
-        <img src="../../../assets/img/approved-logo.png" alt="Approval Logo" class="approval-logo">
-      <!-- </div> -->
-    </div>
-    <form method="post" class="container form-container">
-      <input type="text" class="form-control input-field" placeholder="First & Last Name" required><br>
-      <input type="tel" class="form-control input-field" placeholder="555-555-5555" required><br>
-      <input type="email" class="form-control input-field" placeholder="your@email.com" autocomplete="off" required><br>
-      <button type="submit" class="button margin-auto">SEND ME OFFERS</button>
-    </form>
-    <div class="logo-container position-right">
-      <img src="../../../assets/icons/makes/honda-1.png" alt="Honda" class="logo-img">
-      <img src="../../../assets/icons/makes/hyundai-1.png" alt="Hyundai" class="logo-img">
-      <img src="../../../assets/icons/makes/jeep-1.png" alt="Jeep" class="logo-img">
-      <img src="../../../assets/icons/makes/mazda-1.png" alt="Mazda" class="logo-img">
-      <img src="../../../assets/icons/makes/ram-1.png" alt="Ram" class="logo-img">
-      <img src="../../../assets/icons/makes/VW-1.png" alt="Volkswagen" class="logo-img">
-      <img src="../../../assets/icons/makes/toyota-1.png" alt="Toyota" class="logo-img">
-    </div>
-  </div>
 </div>
+

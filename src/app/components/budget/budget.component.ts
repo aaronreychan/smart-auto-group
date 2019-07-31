@@ -1,7 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Criteria } from '../../entities/criteria';
 import { MyCookieService } from '../../services/cookieService';
-import { AppConstants } from 'src/app/constants/AppConstants';
+import { AppConstants, } from 'src/app/constants/AppConstants';
+import { allCar, Car} from '../../entities/car';
 
 declare var $: any;
 
@@ -11,7 +12,8 @@ declare var $: any;
   styleUrls: ['./budget.component.css']
 })
 export class BudgetComponent implements OnInit, AfterViewInit {
-
+  public allCar: Car[] = allCar;
+  public chosenCarNumber = 0;
   criteria: Criteria;
 
   constructor(private myCookieService: MyCookieService) { }
@@ -22,42 +24,32 @@ export class BudgetComponent implements OnInit, AfterViewInit {
     this.criteria = new Criteria();
     this.criteria.budget = this.myCookieService.getCookie(AppConstants.cookieBudget);
 
-    $(".js-range-slider").ionRangeSlider({
-      type: "single",
-      prefix: "$",
-      skin: "round",
-      min: 150,
-      max: 1800,
+    $('.js-range-slider').ionRangeSlider({
+      type: 'single',
+      prefix: '$',
+      skin: 'round',
+      min: 100,
+      max: 1900,
       from: this.criteria.budget,
-      step: 25,
+      step: 5,
       grid: true,
       onFinish: function (data) {
           // fired on changing slider with Update method
           console.log(data);
-          debugger;
           document.cookie = AppConstants.cookieBudget + '=' + data.from + ';';
       }
     });
-
   }
 
-  ngAfterViewInit(){
-    var carType = this.myCookieService.getCookie(AppConstants.cookieCarType);
-    $("#"+carType).prop('checked', true);
-  }
-  
-  public storeCookie(name:any, val: any) {
-    this.myCookieService.storeCookie(name, val);
+  ngAfterViewInit() {
+    $('#' + this.myCookieService.getCookie(AppConstants.cookieCarType)).prop('checked', true);
   }
 
-  carSelected() {
-    var carSelectedType = $("input[type='radio'][name='car-select']:checked");
-    console.log(carSelectedType);
+  carSelected(index) {
+    this.chosenCarNumber = index;
   }
 
-  mobileCarSelected() {
-    var mobileCarSelectedType = $("input[type='radio'][name='mobile-car-select']:checked");
-    console.log(mobileCarSelectedType);
+  public addValueToCookie() {
+    this.myCookieService.storeCookie(AppConstants.cookieCarType,  allCar.filter((val, i) => this.chosenCarNumber === i)[0].name);
   }
-
 }
