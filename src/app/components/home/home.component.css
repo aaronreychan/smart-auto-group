@@ -129,6 +129,17 @@ video {
   padding-bottom: 50px; 
 }
 
+/* Why Us Section ------------------------------------------------------------------ */
+#whyUs {
+  background-color: #F5F5F5;
+  padding: 50px 10vw;
+  font-size: 1.2rem;
+  min-height: auto;
+}
+b {
+  font-weight: 500;
+}
+
 /* Title */
 .section-title {
   text-align: center;
@@ -257,10 +268,8 @@ video {
 /* Map Section ----------------------------------------------- */
 #map {
   min-height: unset;
-  height: 510px;
+  height: 500px;
   background-color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .iframe-container {

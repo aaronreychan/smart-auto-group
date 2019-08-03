@@ -67,9 +67,6 @@ p {
 }
 .blue-container {
   background-color: #166CBF;
-  margin-bottom: 25px;
-}
-.custom-text {
   color: white;
   font-size: 1.6rem;
   font-style: italic;
@@ -97,7 +94,7 @@ p {
   p { font-size: 1rem; }
   .card-left { margin-right: 3.5vw; }
   .card-right { margin-left: 3.5vw; }
-  .custom-text { font-size: 1.4rem; }
+  .blue-container { font-size: 1.4rem; }
 }
 
 /* iPad - Horizontal */
@@ -140,8 +137,7 @@ p {
   .card-right { margin-left: unset; margin-right: unset; }
   .picture-top { flex-direction: column-reverse; }
   .team-img { width: 100%; margin-bottom: 15px; }
-  .blue-container { margin-top: 15px; margin-bottom: 95px; }
-  .custom-text { font-size: 1.1rem; }
+  .blue-container { margin-top: 15px; margin-bottom: 95px; font-size: 1.1rem;}
   .action-button-container { 
     height: 60px; 
     width: 100%; 
@@ -171,7 +167,7 @@ p {
   .page-title { font-size: 2rem; }
   .show-desktop { display: none; }
   .show-mobile { display: inherit; }
-  .custom-text { font-size: 1.3rem; }
+  .blue-container { font-size: 1.3rem; }
 }
 
 /* iPhone */
