@@ -168,18 +168,13 @@ em, i {
 }
 
 .form-container {
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .input-field {
     width: 250px;
     margin: auto;
     margin-top: 0;
-}
-
-.approval-logo {
-    margin-top: 15px;
-    margin-bottom: -25px;
 }
 
 /* Button */
@@ -374,11 +369,6 @@ em, i {
     .email-group {
         position: relative;
         top: 15px;
-    }
-
-    .approval-logo {
-        margin-top: 10px;
-        margin-bottom: -15px;
     }
 
     .logo-img {
