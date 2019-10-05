@@ -16,6 +16,7 @@
   background-color: #166CBF;
   text-align: center;
   padding: 10px 70px;
+  margin-bottom: 20px;
 }
 .page-title {
   text-transform: uppercase;
@@ -46,22 +47,17 @@
   align-items: start;
 }
 .card-left {
-  margin-right: 1.5vw;
+  margin: 0 30px;
 }
 .card-right {
   justify-content: space-between;
-  margin-left: 1.5vw;
+  margin: 0 30px;
   margin-right: 0;
 }
 .team-img {
   width: 333px;
 }
-.team-text-group.left {
-    padding-left: 25px;
-  }
-.team-text-group.right {
-    padding-right: 25px;
-}
+
 p {
   text-align: justify;
 }
@@ -92,8 +88,6 @@ p {
   .team-img { width: 250px; }
   h4 { font-size: 1.3rem; }
   p { font-size: 1rem; }
-  .card-left { margin-right: 3.5vw; }
-  .card-right { margin-left: 3.5vw; }
   .blue-container { font-size: 1.4rem; }
 }
 
@@ -133,8 +127,6 @@ p {
   .collapsed { padding-top: 10px; padding-bottom: 10px; }
   .less-padding { padding-top: 0; }
   .even-less-padding { margin-top: -25px; }
-  .card-left { margin-right: unset; }
-  .card-right { margin-left: unset; margin-right: unset; }
   .picture-top { flex-direction: column-reverse; }
   .team-img { width: 100%; margin-bottom: 15px; }
   .blue-container { margin-top: 15px; margin-bottom: 95px; font-size: 1.1rem;}
