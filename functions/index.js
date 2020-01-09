@@ -7,7 +7,7 @@ function parseBody(value) {
     const body = JSON.parse(value);
     const fromEmail = new helper.Email(body.from); // user email
     const toEmail = new helper.Email(functions.config().sendgrid.email); // main email 'George@smartautogroup.ca'
-    const subject = 'Smart Auto Group'; // subject
+    const subject = 'Smart Auto Financial'; // subject
     const content = new helper.Content('text/html', body.content); // HTML content
     const mail = new helper.Mail(fromEmail, subject, toEmail, content);
     return mail.toJSON();

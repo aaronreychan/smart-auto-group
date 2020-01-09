@@ -1,9 +1,13 @@
 /*Slider*/
 .irs-single  {
-	background-color: #006CFA;
+	background-color: #0e9648;
 }
 .irs-bar-edge, .irs-bar {
-	background: linear-gradient(to top, rgba(0,108,250, 1) 0%, rgba(0,108,250, 0.2) 80%);
+	background: linear-gradient(to top, #0e9648 0%, rgba(14,150,72, 0.2) 80%);
+	border-color: #0e9648;
+}
+.irs-grid-pol {
+	background: #0e9648;
 }
 /* Spinner ------------------------------------ */
 @-webkit-keyframes spinner-border {

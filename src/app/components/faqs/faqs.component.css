@@ -13,7 +13,7 @@
 .page-title-container {
   height: 180px;
   width: 100%;
-  background-color: #166CBF;
+  background-color: #0e9648;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
 
 /* Q/A */
 .question {
-  color: #007bff;
+  color: #0e9648;
   text-transform: uppercase;
   margin-top: 25px;
 }
@@ -69,7 +69,7 @@
   font-size: 5rem;
   margin: auto;
   margin-bottom: 10px;
-  color: rgb(27, 76, 255);
+  color: #0e9648;
 }
 .card-sm-title {
   text-align: center;
@@ -98,7 +98,7 @@
 
 /* Button */
 .button { 
-  background-color: #37b601;
+  background-color: #6fbe44;
   border: none;
   color: white;
   width: 350px;
@@ -129,7 +129,7 @@
   left: 50%;
   transform: translate(-50%, 0%);
   margin-bottom: 40px;
-  background-color: #37b601;
+  background-color: #6fbe44;
 }
 
 /* -------------------------------- */

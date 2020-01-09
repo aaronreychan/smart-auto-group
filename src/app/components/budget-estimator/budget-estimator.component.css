@@ -14,7 +14,7 @@
 .page-title-container {
   height: 180px;
   width: 100%;
-  background-color: #166CBF;
+  background-color: #0e9648;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +105,7 @@ option {
 .big-number {
   font-size: 6rem;
   font-weight: normal;
-  color: #006CFA;
+  color: #0e9648;
   text-align: center;
 }
 .calc-text {
@@ -123,7 +123,7 @@ option {
 .budget-title {
   text-align: center;
   font-weight: bold;
-  color: #006CFA;
+  color: #0e9648;
   margin-bottom: 25px;
 }
 .budget-text {
@@ -133,7 +133,7 @@ option {
 
 /* Button */
 .button { 
-  background-color: rgb(27, 76, 255);
+  background-color: #0e9648;
   border: none;
   color: white;
   padding: 10px 30px 12px;
@@ -162,7 +162,7 @@ option {
 }
 .approved-btn {
   margin-bottom: 40px;
-  background-color: #37b601;
+  background-color: #6fbe44;
 }
 
 /* -------------------------------------- */

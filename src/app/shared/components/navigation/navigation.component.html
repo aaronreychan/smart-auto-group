@@ -1,29 +1,37 @@
 <!-- Navigation -->
 <div class="menu-background"></div>
 <div class="menu-container" id="menu-bars" (click)="Toggle()">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
 </div>
 <div class="nav-background">
-  <a routerLink="/" routerLinkActive="active"><img src="../../../../assets/icons/logo.jpeg" alt="" class="brand-logo"></a>
-  <div class="title-group">
-    <a routerLink="/" routerLinkActive="active">
-      <h1 class="brand-title">Smart Auto Financial</h1>
-      <h4 class="brand-subtitle">It seems impossible until it is done</h4>
-    </a>
-</div>
-<div class="nav-wrapper">
-  <nav class="nav-menu" id="nav">
-    <ul class="nav-items" (click)="Toggle()">
-      <a routerLink="/" routerLinkActive="active" class="no-margin-left-list"><li>Home</li></a> 
-      <a routerLink="/about" routerLinkActive="active"><li>How it Works</li></a> 
-      <a routerLink="/budget-estimator" routerLinkActive="active"><li>Budget Estimator</li></a> 
-      <a routerLink="/inventory" routerLinkActive="active"><li>Inventory</li></a> 
-      <a routerLink="/team" routerLinkActive="active"><li>About Us</li></a> 
-      <a routerLink="/faqs" routerLinkActive="active"><li>FAQs</li></a> 
-      <a routerLink="/reviews" routerLinkActive="active"><li>Reviews</li></a> 
-    </ul>
-  </nav>
-</div>
+    <a class="brand-link" routerLink="/" routerLinkActive="active"><img src="../../../../assets/icons/logo.jpeg" alt="" class="brand-logo"></a>
+    <div class="nav-wrapper">
+        <nav class="nav-menu" id="nav">
+            <ul class="nav-items" (click)="Toggle()">
+                <a routerLink="/" routerLinkActive="active" class="no-margin-left-list">
+                    <li>Home</li>
+                </a>
+                <a routerLink="/about" routerLinkActive="active">
+                    <li>How it Works</li>
+                </a>
+                <a routerLink="/budget-estimator" routerLinkActive="active">
+                    <li>Budget Estimator</li>
+                </a>
+                <a routerLink="/inventory" routerLinkActive="active">
+                    <li>Inventory</li>
+                </a>
+                <a routerLink="/team" routerLinkActive="active">
+                    <li>About Us</li>
+                </a>
+                <a routerLink="/faqs" routerLinkActive="active">
+                    <li>FAQs</li>
+                </a>
+                <a routerLink="/reviews" routerLinkActive="active">
+                    <li>Reviews</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
 </div>

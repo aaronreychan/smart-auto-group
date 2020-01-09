@@ -43,7 +43,7 @@ export class EmailComponent implements OnDestroy {
                             <td style="text-align: center">
                                 <a href="https://smart-auto-group.firebaseapp.com">
                                     <img src="${logoUrl}"
-                                        alt="Smart Auto Group" width="220" height="120">
+                                        alt="Smart Auto Financial" width="220" height="120">
                                 </a>
                             </td>
                         </tr>
@@ -53,7 +53,7 @@ export class EmailComponent implements OnDestroy {
                     border-collapse: collapse; font-family: Arial,'helvetica', sans-serif;">
                         <tbody>
                         <tr style="margin-top: 20px;">
-                            <td colspan="2" style="font-family: Michroma; font-size: 30px;">Smart Auto Group
+                            <td colspan="2" style="font-family: Michroma; font-size: 30px;">Smart Auto Financial
                             </td>
                         </tr>
                         <tr style="margin-top: 40px;">

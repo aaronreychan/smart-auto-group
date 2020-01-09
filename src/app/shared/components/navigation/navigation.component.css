@@ -8,10 +8,12 @@
 /* light grey #E8E8E8 */
 
 /* Navigation */
+
 a {
   text-decoration: none;
   color: unset;
 }
+
 .nav-background {
   position: fixed;
   top: 0;
@@ -21,26 +23,16 @@ a {
   z-index: 10;
   display: flex;
   align-items: center;
+  padding-left: 80px;
+}
+.brand-link {
+  max-height: 100%;
+  overflow: hidden;
 }
 .brand-logo {
-  height: 40px;
-  width: auto;
-  margin-left: 10px;
-}
-.brand-title {
-  font-size: 1.9rem;
-  font-family: Michroma; 
-  margin-left: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.brand-subtitle {
-  margin-top: 0;
-  margin-left: 10px;
-  font-size: 1.25rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: #4b5998;
+  height: auto;
+  width: 300px;
+  transform: translate(0, -221px);
 }
 .nav-wrapper {
   display: flex; 
@@ -71,15 +63,15 @@ a {
 .nav-menu a {
   color: white;
   padding: 8px 14px;
-  background-color: rgb(27, 76, 255);
-  border: 2px solid rgb(27, 76, 255);
+  background-color: #0e9648;
+  border: 2px solid #0e9648;
   border-radius: 5px;
   margin-left: 10px;
 }
 .nav-menu a:hover {
   color: black;
   background-color: white;
-  border: 2px solid rgb(27, 76, 255);
+  border: 2px solid #0e9648;
 }
 .no-margin-left-list {
   margin-left: -35px !important;
@@ -97,16 +89,12 @@ a {
 
 /* Laptop ----------------------***********------------------ */
 @media screen and (max-width: 1800px) {
-  .brand-title { font-size: 1.5rem; margin-top: 5px; }
-  .brand-subtitle { font-size: .95rem; }
   .nav-background { height: 50px; }
   .nav-menu a { padding: 4px 7px; font-size: 14px; }
 }
 
 /* Smaller Laptops ---------***********------------------ */
 @media screen and (max-width: 1596px) {
-  .brand-title { font-size: 1.1rem; font-weight: bold; margin-top: 5px; }
-  .brand-subtitle { font-size: .8rem; }
   .nav-menu a { padding: 4px 7px; font-size: 14px; }
   .nav-background { height: 50px; }
 }
@@ -189,14 +177,10 @@ a {
 
 /* Large Smartphone */
 @media screen and (max-width: 600px) {
-  .brand-title { margin-left: 15px; }
-  .brand-subtitle { margin-left: 15px; font-size: .72rem; }
   .menu-container { right: 15px; }
 }
 
 /* iPhone X */
 @media screen and (max-width: 376px) {
-  .brand-title { margin-left: 25px; font-size: 1rem; }
-  .brand-subtitle { margin-left: 25px; font-size: .65rem; }
   .menu-container { right: 15px; }
 }

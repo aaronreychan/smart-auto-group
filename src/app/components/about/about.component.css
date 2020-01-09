@@ -13,7 +13,7 @@
 .page-title-container {
   height: 180px;
   width: 100%;
-  background-color: #166CBF;
+  background-color: #0e9648;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   margin-bottom: 20px;
 }
 .card-header {
-  background-color: #166CBF;
+  background-color: #6fbe44;
   color: white;
 }
 .card-text {
@@ -39,7 +39,7 @@
 
 /* Button */
 .button { 
-  background-color: #37b601;
+  background-color: #6fbe44;
   border: none;
   color: white;
   width: 100%;
@@ -71,7 +71,7 @@
   left: 50%;
   transform: translate(-50%, 0%);
   margin-bottom: 40px;
-  background-color: #37b601;
+  background-color: #6fbe44;
 }
 
 /* Button Group */

@@ -61,7 +61,7 @@ em, i {
 .completed-steps {
     height: 5px;
     width: 0%;
-    background-color: #37b601;
+    background-color: #6fbe44;
     position: absolute;
     top: -5px;
     left: 8px;
@@ -132,7 +132,7 @@ em, i {
 }
 
 .steps-description .confirmed {
-    color: #37b601;
+    color: #6fbe44;
 }
 
 .steps-description .pending {
@@ -179,7 +179,7 @@ em, i {
 
 /* Button */
 .button {
-    background-color: rgb(27, 76, 255);
+    background-color: #0e9648;
     border: none;
     color: white;
     padding: 10px 20px 12px;
@@ -216,7 +216,7 @@ em, i {
     position: relative;
     top: -15px;
     left: 10px;
-    background-color: #37b601;
+    background-color: #6fbe44;
 }
 
 .spinner {

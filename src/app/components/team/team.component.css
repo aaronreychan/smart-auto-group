@@ -13,7 +13,7 @@
 /* Title */
 .page-title-container {
   width: 100%;
-  background-color: #166CBF;
+  background-color: #0e9648;
   text-align: center;
   padding: 10px 70px;
   margin-bottom: 20px;
@@ -62,7 +62,7 @@ p {
   text-align: justify;
 }
 .blue-container {
-  background-color: #166CBF;
+  background-color: #6fbe44;
   color: white;
   font-size: 1.6rem;
   font-style: italic;

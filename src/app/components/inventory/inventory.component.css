@@ -14,7 +14,7 @@
 .page-title-container {
   height: 180px;
   width: 100%;
-  background-color: #166CBF;
+  background-color: #0e9648;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@
 
 /* Button */
 .button { 
-  background-color: rgb(27, 76, 255);
+  background-color: #0e9648;
   border: none;
   color: white;
   padding: 16px 32px 12px;

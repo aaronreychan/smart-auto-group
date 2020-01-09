@@ -9,6 +9,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  min-height: 630px;
 }
 section {
   min-height: 100vh; 
@@ -32,9 +33,10 @@ a:hover { color: black; }
 }
 video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 .video-overlay {
   height: 100vh;
@@ -48,9 +50,9 @@ video {
 /* Title */
 .title-group {
   font-family: Montserrat, sans-serif;
-  color: white; 
+  color: white;
   position: absolute;
-  top: 260px;
+  top: 25%;
   left: 80px;
 }
 .home-title { font-size: 3.8rem; }
@@ -59,7 +61,7 @@ video {
 
 /* Button */
 .button { 
-  background-color: rgb(27, 76, 255);
+  background-color: #0e9648;
   border: none;
   color: white;
   padding: 16px 32px 12px;
@@ -293,7 +295,7 @@ b {
 #footer {
   min-height: unset;
   height: 220px;
-  background-color: #166CBF;
+  background-color: #6fbe44;
 }
 .footer-container {
   position: relative;
@@ -472,6 +474,10 @@ b {
     border-top: 2.5px solid black;
   }
   .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
+}
+
+.ml-50 {
+  margin-left: 50px;
 }
 
 /* Large Smartphone - Horizontal */
