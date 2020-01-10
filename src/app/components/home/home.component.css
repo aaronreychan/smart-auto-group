@@ -1,4 +1,9 @@
 @font-face { font-family: Montserrat; src: url(../../../assets/fonts/Montserrat.ttf) }
+
+#home {
+  overflow: hidden;
+}
+
 .home-wrapper {
   background-image: url("../../../assets/img/video-picture.png");
   background-repeat: no-repeat;
@@ -343,8 +348,19 @@ b {
   left: -30px;
 }
 
-.custom-text p {
-    text-indent: 50px;
+.custom-text .p-point {
+  margin-left: 50px;
+}
+.p-list li {
+  list-style-type: none;
+  position: relative;
+  margin-top: 10px;
+}
+
+.p-list li:before {
+  content: '-';
+  left: -15px;
+  position: absolute;
 }
 
 /* ------------------------------------ */
