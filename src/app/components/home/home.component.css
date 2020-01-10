@@ -343,6 +343,9 @@ b {
   left: -30px;
 }
 
+.custom-text p {
+    text-indent: 50px;
+}
 
 /* ------------------------------------ */
 .show-desktop { display: inherit; }
@@ -476,9 +479,6 @@ b {
   .action-button { text-align: center; text-transform: uppercase; margin-top: 12px; }
 }
 
-.ml-50 {
-  margin-left: 50px;
-}
 
 /* Large Smartphone - Horizontal */
 @media screen and (max-width: 850px) and (max-height: 500px) {
