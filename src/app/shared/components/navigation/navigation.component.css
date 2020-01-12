@@ -32,7 +32,6 @@ a {
 .brand-logo {
   height: auto;
   width: 300px;
-  transform: translate(0, -221px);
 }
 .nav-wrapper {
   display: flex; 
